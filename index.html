@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>» About wj</title>
+        <!--REQUIRED STYLE SHEETS-->
+    <!--MAIN BOOTSTRAP STYLE-->
+    <link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!--FONT AWESOME STYLE -->
+    <link href="assets/plugins/font-awesome/font-awesome.min.css" rel="stylesheet" />
+         <!--CUSTOM STYLE -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!--END REQUIRED STYLE SHEETS-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- LEFT MENU SECTION -->
+    <section class="left-panel">
+        <nav class="navigatation">
+            <div class="menu-text">
+                <h3><i class="fa fa-keyboard-o main-color"></i>菜单</h3>
+            </div>
+            <a href="#home-section">基本信息</a>
+            <a href="#s-section">教育经历</a>
+            <a href="#photoshow-section">技能及项目经验</a>
+           <a href="#">菜单4</a>
+		   <a href="#">菜单5</a>
+        </nav>
+        <!-- ./Navigation links-->
+        <div id="social-links" class="Icon-trigger">
+            <span class="fa fa-bars"></span>
+
+        </div>
+        <!-- ./Social links-->
+        <!-- ./Social links-->
+    </section>
+    <!--END LEFT MENU SECTION -->
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <!-- HOME SECION -->
+        <section id="home-section" >
+            <div class="row">
+
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                <img class="img-circle" src="assets/img/1.jpg">
+                <h2><strong> 王婧</strong></h2>
+                <h4 class="text-left">您可以这样找到我：</h4>
+                <p style="padding-left:40px;padding-right:40px;">
+                    <address>
+                        <abbr title="手机"><strong>P:</abbr> 18833713533<br>
+                        <abbr title="QQ"><strong>qq:</abbr> 1024376124<br>
+                        <abbr title="邮箱">E-mail:</abbr><a href="mailto:#">CestLaVi3@hotmail.com</a></strong>
+                    </address>
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10 col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-offset-1" >
+                <h1>关于  <i class="fa fa-WJ main-color fa-spin"></i> 我  </h1>
+                <br>
+                <p style="font-family:微软雅黑;">
+                     我叫王婧<br><br>
+                     1994年7月出生的巨蟹宝宝~<br><br>
+                     目前就读于 北京交通大学海滨学院 计算机科学系<br><br>
+                     一个即将步入大四 寻找归属的大三狗<br><br>
+                     我是一个热爱生活 对身边事物充满热情与激情的浪漫女青年<br>
+                </p>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="counter"></div>
+                    <h2>毕业倒计时</h2>
+                    <script>
+                    function GetRTime(){
+                        var EndTime= new Date('2016/06/18 00:00:00');
+                        var NowTime = new Date();
+                        var t =EndTime.getTime() - NowTime.getTime();
+                        var d=0;
+                        var h=0;
+                        var m=0;
+                        var s=0;
+                        if(t>=0){
+                            d=Math.floor(t/1000/60/60/24);
+                            h=Math.floor(t/1000/60/60%24);
+                            m=Math.floor(t/1000/60%60);
+                            s=Math.floor(t/1000%60);
+                        }
+                        document.getElementById("day-number").innerHTML = d ;
+                        document.getElementById("hour-number").innerHTML = h;
+                        document.getElementById("minute-number").innerHTML = m;
+                        document.getElementById("second-number").innerHTML = s;
+                    }
+                    setInterval(GetRTime,0);
+                    </script>
+                    <div id="counter-default" class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div class="inner">
+                                <div id="day-number" class="timer-number"></div>
+                                <div class="timer-text">DAYS</div>
+                                <div class="progress medium  active">
+                                <div id="day-bar" class="progress-bar bk-blue"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner">
+                            <div id="hour-number" class="timer-number"></div>
+                            <div class="timer-text">HOURS</div>
+                            <div class="progress medium  active">
+                                <div id="hour-bar" class="progress-bar bk-green"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner">
+                            <div id="minute-number" class="timer-number"></div>
+                            <div class="timer-text">MINUTES</div>
+                            <div class="progress medium  active">
+                                <div id="minute-bar" class="progress-bar bk-pink"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner">
+                            <div id="second-number" class="timer-number"></div>
+                            <div class="timer-text">SECOND</div>
+                            <div class="progress medium  active">
+                                <div id="second-bar" class="progress-bar bk-red"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<script type="text/javascript">
+    function aa(event){
+      var a=document.getElementById("div");
+      a.style.display="block";
+            a.style.left=event.clientX+15;
+            a.style.top=parseInt(event.y)+5+document.body.scrollTop;
+            a.style.position="absolute";
+
+  }
+  function bb(event){
+    var b=document.getElementById("div");
+    if(b.style.display=="block"){
+         b.style.display=="none";
+    }
+  }
+  </script>
+<section id="s-section">
+            <div class="row">
+                <div class="">
+
+                    <h1 class="center">个人技能</h1>
+                    <div class="divider-two margin-botom-50"></div>
+                    <p class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 center">
+
+                        <span onmouseover="aa(event)" onmouseout="bb(event)"> HTML5/CSS3/javascript/</span>
+                        <div id="div" style="display:none" class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 center"><strong>我是div</strong></div>
+                    </p>
+                    <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12 center">
+
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--./row-->
+        </section>
+        <section id="photoshow-section">
+            <div id="photoshow">
+                <ul id="feature">
+                    <div class="rowwrap wrapper">
+                        <div class="wrappedSm">
+                            <li >
+                                <div>
+
+                                </div>
+                                <img src="assets/img/2.JPG">
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="row">
+
+            </div>
+            <!--./row-->
+        </section>
+        <!--END FOOTER SECION -->
+    </div>
+    <!-- END MAIN CONTAINER -->
+    <!--REQUIRED SCRIPTS FILES-->  <!--SCRIPTS AT END SO PAGE WILL TAKE LESS TIME TO LOAD-->
+    <!--REQUIRED CORE JQUERY SCRIPTS FILE-->
+    <script src="assets/plugins/jquery.min.js"></script>
+     <!--REQUIRED BOOTSTRAP SCRIPTS FILE-->
+    <script src="assets/plugins/bootstrap/bootstrap.js"></script>
+   <!--REQUIRED SCRIPT FILES FOR JQUERY COUNTDOWN-->
+    <script src="assets/plugins/countdown/jquery.countdown.js"></script>
+    <script src="assets/js/countdown.js"></script>
+     <!--REQUIRED SCRIPT FOR SCROLLING MENU LINKS-->
+     <script src="assets/plugins/jquery.easing.1.3.js"></script>
+        <!--REQUIRED CUSTOM SCRIPT FILE-->
+    <script src="assets/js/custom-color.js"></script>
+      <!--END REQUIRED SCRIPTS FILES-->
+</body>
+
+
+</html>
