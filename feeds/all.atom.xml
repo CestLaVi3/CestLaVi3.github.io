@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>WJ's Blog</title><link href="http://cestlavi3.github.io/" rel="alternate"></link><link href="http://cestlavi3.github.io/feeds/all.atom.xml" rel="self"></link><id>http://cestlavi3.github.io/</id><updated>2015-07-22T22:55:00+08:00</updated><entry><title>Red hat安装与使用</title><link href="http://cestlavi3.github.io/Red%20hat%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.html" rel="alternate"></link><updated>2015-07-22T22:55:00+08:00</updated><author><name>CestLaVi3</name></author><id>tag:cestlavi3.github.io,2015-07-22:Red hat安装与使用.html</id><summary type="html">&lt;h2&gt;新建虚拟机&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722221542124.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722221631619.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722221657861.png" /&gt;&lt;/p&gt;
+&lt;p&gt;名称可以随便写，位置选择比较大的盘尽量在30GB以上&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722221717391.png" /&gt;&lt;/p&gt;
+&lt;p&gt;最少选择25个GB，这里选择45GB&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722221737258.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722221756270.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722221818721.png" /&gt;&lt;/p&gt;
+&lt;p&gt;浏览选择光盘镜像RHEL_5.5 i386 DV.iso &lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722221840987.png" /&gt;&lt;/p&gt;
+&lt;h2&gt;安装配置&lt;/h2&gt;
+&lt;p&gt;点击确定后，打开虚拟机，出现此界面敲击回车安装&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722221917614.png" /&gt;&lt;/p&gt;
+&lt;p&gt;安装过程&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722222023431.png" /&gt;&lt;/p&gt;
+&lt;p&gt;点击Skip安装&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722222047503.png" /&gt;&lt;/p&gt;
+&lt;p&gt;点击Next
+&lt;img alt="这里写图片描述" src="/images/20150722222111196.png" /&gt;&lt;/p&gt;
+&lt;p&gt;选择中文后点击Next（英文好可选英文）&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722222144223.png" /&gt;&lt;/p&gt;
+&lt;p&gt;选择美国英语式键盘，点击下一步&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722222224877.png" /&gt;&lt;/p&gt;
+&lt;p&gt;选择跳过安装号码，确定&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722222252813.png" /&gt;&lt;/p&gt;
+&lt;p&gt;跳过&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722222313557.png" /&gt;&lt;/p&gt;
+&lt;p&gt;选择检验和修改分区方案，下一步&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722222337511.png" /&gt;&lt;/p&gt;
+&lt;p&gt;删除所有的LVM卷组和磁盘驱动器&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722222356940.png" /&gt;&lt;/p&gt;
+&lt;p&gt;删除后&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722222426009.png" /&gt;&lt;/p&gt;
+&lt;p&gt;这步之后开始分区，分区很重要，Linux系统分区的原则如下：
+1. 严格限制大小的：/—根目录，1G。/swap—系统的交换分区，可以看作是虚拟内存的分区，类似windows当中的pagefiles.sys。，建议这个分区是物理内存的两倍。/boot—开机时会用到的文件，1G。
+2. 灵活掌握大小的：/tmp—临时文件 /usr/local—系统管理员在本机安装自行下载软件的地方 /opt—第三方软件放置的地方
+3. 尽量大点的：/home—存放用户的主目录。/usr—厂商提供的软件存放的地方，类似windows下的c:\program file\，这是linux系统中占用硬盘空间最大的目录。/var—可变信息区（file spool,logs,requests,mail,etc.)，存放可变信息、日志（这三个根据自己需要设置，最后把剩余空间都分配给var即可）。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722222449004.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223057321.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223105530.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223113565.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722224429549.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223128196.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223137342.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223145573.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223153138.png" /&gt;&lt;/p&gt;
+&lt;p&gt;点击‘新建’，
+无需改动下一步 &lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223316503.png" /&gt;&lt;/p&gt;
+&lt;p&gt;选择亚洲上海，取消系统时钟使用UTC（S）,点下一步&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223327555.png" /&gt;&lt;/p&gt;
+&lt;p&gt;输入密码下一步&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223454010.png" /&gt;&lt;/p&gt;
+&lt;p&gt;选择现在定制，后点击下一步&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223355949.png" /&gt;&lt;/p&gt;
+&lt;p&gt;选择开发、java、可选包全部勾选&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223514214.png" /&gt;&lt;/p&gt;
+&lt;p&gt;选择开发、老的软件开发、可选包全部勾选&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223524868.png" /&gt;&lt;/p&gt;
+&lt;p&gt;选择后关闭，点击下一步&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223545611.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223757084.png" /&gt;&lt;/p&gt;
+&lt;p&gt;下一步&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223814170.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223851847.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223858350.png" /&gt;&lt;/p&gt;
+&lt;p&gt;重新引导&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223921492.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223933234.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223944844.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722223954159.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722224002184.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722224008463.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722224023744.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722224034159.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722224043258.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722224051264.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722224105050.png" /&gt;&lt;/p&gt;</summary><category term="Linux"></category></entry><entry><title>app store注册美区appid下载中国区无法下载的app</title><link href="http://cestlavi3.github.io/app%20store%E6%B3%A8%E5%86%8C%E7%BE%8E%E5%8C%BAappid%E4%B8%8B%E8%BD%BD%E4%B8%AD%E5%9B%BD%E5%8C%BA%E6%97%A0%E6%B3%95%E4%B8%8B%E8%BD%BD%E7%9A%84app.html" rel="alternate"></link><updated>2015-02-04T21:55:00+08:00</updated><author><name>mcdona1d</name></author><id>tag:cestlavi3.github.io,2015-02-04:app store注册美区appid下载中国区无法下载的app.html</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;因为对google的软件有需求但是中国区google软件所剩无几，便琢磨着转区，但是目前貌似没有特别容易的方法实现，遂直接申请美区appid&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;appid只能在ios设备上注册，在美版apple官网网页注册下载app需提供信用卡信息&lt;/strong&gt;
+1. 在设置中注销掉当前的app store id
+&lt;img alt="Alt text" src="./images/1435023716091.png" /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;进入appstore，获取任意app，点击创建新的appid
+&lt;img alt="Alt text" src="./images/1435023733697.png" /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择United States，下一步
+&lt;img alt="Alt text" src="./images/1435023739024.png" /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Agree Agree
+&lt;img alt="Alt text" src="./images/1435023744894.png" /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;填写基本注册信息，Next
+&lt;img alt="Alt text" src="./images/1435023752020.png" /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;填写信用卡信息，ios端注册时才会显示none，选择none，Billing Address填写美国地址，我填写的一个转运公司的地址
+&lt;img alt="Alt text" src="./images/1435023757538.png" /&gt;
+&lt;img alt="Alt text" src="./images/1435023766893.png" /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;附：转运中国收货地址
+&lt;img alt="Alt text" src="./images/1435023777032.png" /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;注册完成，可以在app store登陆下载美区app了
+&lt;img alt="Alt text" src="./images/1435023781268.png" /&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary><category term="Appstore"></category></entry></feed>
