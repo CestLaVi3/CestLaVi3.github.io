@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://cestlavi3.github.io/theme/css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cestlavi3.github.io/theme/css/pygments.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cestlavi3.github.io/theme/css/font-awesome.min.css">
+  <link href="http://cestlavi3.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="WJ's Blog Atom">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+<meta name="author" content="CestLaVi3" />
+<meta name="description" content="总结了最近所接触的Linux的相关知识点" />
+<meta name="keywords" content="Linux">
+<meta property="og:site_name" content="WJ's Blog"/>
+<meta property="og:title" content="Linux常识及基本指令"/>
+<meta property="og:description" content="总结了最近所接触的Linux的相关知识点"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://cestlavi3.github.io/Linux常识及基本指令.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2015-07-30 16:25:00+08:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://cestlavi3.github.io/author/cestlavi3.html">
+<meta property="article:section" content="tech"/>
+<meta property="article:tag" content="Linux"/>
+<meta property="og:image" content="profile.png">  <title>WJ's Blog &ndash; Linux常识及基本指令</title>
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="http://cestlavi3.github.io">
+        <img src="profile.png" alt="WJ's Blog" title="WJ's Blog">
+      </a>
+      <h1><a href="http://cestlavi3.github.io">WJ's Blog</a></h1>
+      <p>Web Developer</p>
+      <nav>
+        <ul class="list">
+          
+          <li><a href="http://CestLaVi3.github.io/index.html" target="_self">index</a></li>
+          <li><a href="/category/tech.html" target="_self">tech</a></li>
+          <li><a href="/category/life.html" target="_self">life</a></li>
+          <li><a href="http://CestLaVi3.github.io/About.html" target="_self">about</a></li>
+          <li><a href="http://CestLaVi3.github.io/tags.html" target="_self">tags</a></li>
+          <li><a href="http://CestLaVi3.github.io/Log.html" target="_self">log</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/CestLaVi3" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-weibo" href="http://weibo.com/234776564" target="_blank"><i class="fa fa-weibo"></i></a></li>
+        <li><a class="sc-envelope-o" href="mailto:CestLaVi3@hotmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+
+<article>
+  <header>
+    <h1 id="Linux常识及基本指令">Linux常识及基本指令</h1>
+    <p>发布于 2015-07-30 16:25    类别: <a href="http://cestlavi3.github.io/category/tech.html">tech</a></p>
+  </header>
+  <div>
+    <h2>Linux的版本？内核版本号的组成？</h2>
+<p>内核版本、发行版本Linux的内核本号由3个数字组成：X.Y.Z。
+<em> X：主版本号，通常在一段时间内比较稳定。
+</em> Y：次版本号，偶数代表正式版本，可公开发行；奇数代表测试版
+* Z：表示修改次数号。如Red Hat AS 5 内核版本是 ：2.6.18</p>
+<h2>Linux基本思想与原则？</h2>
+<p>一切都是文件。K.I.S.S (Keep it Simple Stupid)保持简单傻瓜化。</p>
+<h2>block是不是越大越好？</h2>
+<p>不一定，根据实际需求。一个block只能存储一个文件，如果比较大会占用多个block。如果一个文件夹下一万个文件，占用一万个block，一个文件1k，一个block4k，十兆文件占四十兆空间。如果将block分成1K，节省空间，但是读取效率就低了。所以应该根据实际情况，如果是大量零碎文件存储、以及大量临时文件的读写，为了增加磁盘空间效率，可以缩小block，如果是大文件的数据存储，比如数据库应用，可以放大block来提高磁盘数据寻址效率。</p>
+<h2>Linux系统分区原则</h2>
+<ol>
+<li>严格限制大小的：/—根目录，1G。/swap—系统的交换分区，可以看作是虚拟内存的分区，类似windows当中的pagefiles.sys。，建议这个分区是物理内存的两倍。/boot—开机时会用到的文件，1G。</li>
+<li>灵活掌握大小的：/tmp—临时文件 /usr/local—系统管理员在本机安装自行下载软件的地方 /opt—第三方软件放置的地方</li>
+<li>尽量大点的：</li>
+<li>/home—存放用户的主目录。</li>
+<li>/usr—厂商提供的软件存放的地方，类似windows下的c:\program file\，这是linux系统中占用硬盘空间最大的目录。</li>
+<li>/var—可变信息区（file spool,logs,requests,mail,etc.)，存放可变信息、日志（这三个根据自己需要设置，最后把剩余空间都分配给var即可）。</li>
+</ol>
+<h2>主分区、逻辑分区、扩展分区之间的联系与区别？</h2>
+<p>1-4块是预留给主分区和扩展分区的，除去主分区剩余全是扩展分区。逻辑分区从第5块开始，逻辑分区之和等于扩展分区，逻辑分区没有数量限制。
+linux下用字符表示的文件类型：
+<em> -：普通文件
+</em> d：目录文件
+<em> l：链接文件
+</em> b：块设备文件
+<em> c：字符设备文件
+</em> p：管道文件</p>
+<h2>su、su -、sudo的区别？</h2>
+<ul>
+<li>su - 获得本机最高的权限，同时环境也变成了超级用户的环境。</li>
+<li>su只获得了超级用户的权限，环境还是没变，最高权限不能使用，比如改变组的权限就不能用。</li>
+<li>sudo，是Ubuntu常用，可以使用户临时取得超级用户的权限，比如十个人要取得权限，如果把密码告诉十个人，那安全性就不能得以保证，用sudo就可以让他们临时取得权限。</li>
+</ul>
+<h2>基本指令</h2>
+<ul>
+<li>
+<p><code>pwd</code> 查看当前主目录（root直接放在根目录 只有自己可以读）
+ <img alt="Alt text" src="./1445394966396.png" /></p>
+</li>
+<li>
+<p><code>su 用户名</code> 切换普通用户，超级用户的主目录是根目录的子目录，普通用户的主目录是根目录的孙子目录。
+ <img alt="Alt text" src="./1445394976798.png" /></p>
+</li>
+<li>
+<p><code>su -</code> 切换到超级用户
+ <img alt="Alt text" src="./1445395030046.png" /></p>
+</li>
+<li>
+<p><code>ls</code> 查看文件（不包括隐藏文件）
+ <img alt="Alt text" src="./1445395035023.png" /></p>
+</li>
+<li>
+<p><code>ls -a</code> 列出全部（文件前带.的为隐藏文件）
+ <img alt="Alt text" src="./1445395039941.png" /></p>
+</li>
+<li>
+<p><code>ls -l</code> 长格式列出全部文件 等同于ll
+ <img alt="Alt text" src="./1445395048098.png" /></p>
+</li>
+<li>
+<p><code>cd 2</code> 进入文件2中（等同cd ~/2）
+ <img alt="Alt text" src="./1445395054489.png" /></p>
+</li>
+<li>
+<p><code>cd ..</code>跳回上一级目录
+ <img alt="Alt text" src="./1445395058752.png" /></p>
+</li>
+<li>
+<p><code>cd /</code> 切换到根目录
+ <img alt="Alt text" src="./1445395065895.png" /></p>
+</li>
+<li>
+<p><code>cd</code>回到用户主目录
+ <img alt="Alt text" src="./1445395073471.png" /></p>
+</li>
+<li>
+<p><code>touch 1</code> 创建文件1
+ <img alt="Alt text" src="./1445395078758.png" /></p>
+</li>
+<li>
+<p><code>mkdir 5</code> 创建目录5
+ <img alt="Alt text" src="./1445395084467.png" /></p>
+</li>
+<li>
+<p><code>cp 1 3</code> 拷贝1文件到3目录
+ <img alt="Alt text" src="./1445395091875.png" /></p>
+</li>
+<li>
+<p><code>mv 1 2</code> 剪切1文件到2目录：
+ <img alt="Alt text" src="./1445395096353.png" /></p>
+</li>
+<li>
+<p><code>mv</code>还可以用于重命名</p>
+</li>
+<li>
+<p><code>mv 1 aaa</code> 把文件1改名为aaa
+ <img alt="Alt text" src="./1445395104223.png" /></p>
+</li>
+<li>
+<p><code>cp -r 2 3</code> 把2目录复制到3目录里
+ <img alt="Alt text" src="./1445395109655.png" /></p>
+</li>
+<li>
+<p><code>rm 1</code> 删除文件1
+ <img alt="Alt text" src="./1445395116824.png" /></p>
+</li>
+<li>
+<p><code>rmdir 1</code> 删除空目录1 只能删除空目录（非空先rm再删除）
+ <img alt="Alt text" src="./1445395122752.png" /></p>
+</li>
+<li>
+<p><code>rm -r 4</code> 逐层强制删除非空目录（询问）
+ <img alt="Alt text" src="./1445395132102.png" /></p>
+</li>
+<li>
+<p><code>rm –rf 2</code> 强制删除非空目录不询问
+ <img alt="Alt text" src="./1445395139462.png" /></p>
+</li>
+<li>
+<p><code>clear</code> 清屏</p>
+</li>
+<li>
+<p><code>cal</code> 当月日历
+ <img alt="Alt text" src="./1445395153120.png" /></p>
+</li>
+<li>
+<p><code>cal 2015</code> 全年日历
+ <img alt="Alt text" src="./1445395159008.png" /></p>
+</li>
+<li>
+<p><code>cal 5 2012</code>  查看2012年五月
+ <img alt="Alt text" src="./1445395163196.png" /></p>
+</li>
+<li>
+<p><code>Tab</code> 按两下查看一共有所少命令</p>
+</li>
+<li><code>man ls</code> 查看命令用法</li>
+<li><code>date</code> 当前日期</li>
+<li><code>bc</code>  计算器  quit退出</li>
+<li><code>uname</code>  显示当前操作系统</li>
+<li><code>uname -a</code> 内核版本</li>
+<li><code>free</code> 查看内存使用情况</li>
+<li><code>top</code> 打开任务管理器</li>
+<li><code>kill 2342</code> 结束2342进程</li>
+<li><code>df</code> 查看分区</li>
+<li><code>du</code></li>
+<li><code>last</code> 最近用户登录情况</li>
+<li><code>who</code></li>
+<li><code>whoami</code> 当前登录身份</li>
+<li><code>lastlog</code> 列出每个用户的最近登录情况</li>
+<li><code>ps</code> 回车一瞬间活动的进程</li>
+<li><code>shutdown -h now</code> 立刻关机</li>
+<li><code>init 0</code> 立刻关机</li>
+<li><code>halt</code> 立刻关机</li>
+<li><code>shutdown -r now</code> 立刻重启</li>
+<li><code>hostname</code> 显示主机名</li>
+<li><code>cat</code> 查看文件内容</li>
+<li>
+<p><code>cat /etc/passwd</code>   查看用户</p>
+<blockquote>
+<p>查看用户：每一行代表一个用户，每个用户7列。用户名 密码（x 看不见） 用户ID 组ID 备注。
+用户主目录所在路径 这个用户所有的shell用户ID&gt;=500跟我们有关 &lt;500不用看 最高值65534。</p>
+</blockquote>
+</li>
+<li>
+<p><code>cat /etc/group</code>   查看组</p>
+<blockquote>
+<p>查看组:组名 组密码 组ID号
+一个目录是一个用户 一个组可以存放多个用户，即多个目录 查看组内用户只能通过查看用户组ID。</p>
+</blockquote>
+</li>
+</ul>
+<h2>用户管理</h2>
+<p>创建组 <code>groupadd 组名</code>
+删除组  <code>groupdel 组名</code>
+<code>passwd 用户名</code>     修改用户密码
+<code>userdel  -r 用户名</code>   删除用户
+创建用户语法：<code>useradd   -d home 目录名 -g 组名  -s shell路径 用户名</code>
+例：<code>useradd -d /home/xmetc -g etc -s /bin/bash xmet</code>
+<code>usermod -g 组名 用户名</code>   改变用户所属的组
+<code>groupmod  -n 新组名 原组名</code>  更改用户组名称
+<code>chgrp –R root /tmp/</code>      将tmp目录下所有子目录和文件的所有组全部设为root 改变文件或文件夹所属的用户
+<code>chown user file1</code>     将file1文件的所有者改为user
+<code>chown -hR user file1</code>    将file1下的所有文件所有者都改为 user</p>
+<h2>练习：</h2>
+<ol>
+<li>建立两个组（神仙、妖怪）</li>
+<li>建立四个用户（唐僧、悟空、八戒、沙僧）并给用户设置密码</li>
+<li>把悟空、八戒放入妖怪，唐僧、沙僧放入神仙</li>
+<li>用悟空建立一个文件（monkey.java文件中写入I  am  monkey）给八戒一个可以rw的权限</li>
+<li>八戒修改monkey.java加入一句话（I  am  pig）</li>
+<li>唐僧、沙僧对该文件没有权限</li>
+<li>把沙僧放入妖怪组</li>
+<li>让沙僧修改文件monkey.java加入一句话（我是沙僧，我是妖怪）</li>
+</ol>
+<p>1.</p>
+<div class="highlight"><pre>groupadd shenxian
+groupadd yaoguai
+cat /etc/group
+</pre></div>
+
+
+<p><img alt="Alt text" src="./1445395177031.png" />
+<img alt="Alt text" src="./1445395180914.png" />
+2.3.</p>
+<div class="highlight"><pre>useradd -d /home/tangseng -g shenxian -s /bin/bash tangseng
+passwd tangseng
+</pre></div>
+
+
+<p><img alt="Alt text" src="./1445395186268.png" /></p>
+<div class="highlight"><pre>useradd -d /home/shaseng -g shenxian -s /bin/bash shaseng
+passwd shaseng
+</pre></div>
+
+
+<p><img alt="Alt text" src="./1445395189050.png" /></p>
+<div class="highlight"><pre>useradd -d /home/wukong -g yaoguai -s /bin/bash wukong
+passwd wukong
+</pre></div>
+
+
+<p><img alt="Alt text" src="./1445395194190.png" /></p>
+<div class="highlight"><pre>useradd -d /home/bajie -g yaoguai -s /bin/bash bajie
+passwd bajie
+</pre></div>
+
+
+<p><img alt="Alt text" src="./1445395199818.png" /></p>
+<div class="highlight"><pre>cat /etc/passwd
+</pre></div>
+
+
+<p><img alt="Alt text" src="./1445395204075.png" />
+<img alt="Alt text" src="./1445395211866.png" /></p>
+<p>4.</p>
+<div class="highlight"><pre>su wukong
+cd /tmp
+touch monkey.java
+</pre></div>
+
+
+<p><img alt="Alt text" src="./1445395217416.png" /></p>
+<div class="highlight"><pre>vim monkey.java （写入I am monkey）
+chmod 770 monkey.java(所有者与同组人可读可写可执行，其他人不可读不可写不可执行)
+</pre></div>
+
+
+<p>5.</p>
+<div class="highlight"><pre>su bajie
+cd /tmp
+ll
+vim monkey.java
+写入I am pig
+</pre></div>
+
+
+<p>6.</p>
+<div class="highlight"><pre>su shaseng
+cd /tmp
+vim monkey.java
+没有权限！
+</pre></div>
+
+
+<p>7.</p>
+<div class="highlight"><pre>登录超级用户
+su -
+usermod -g yaoguai shaseng
+cat /etc/passwd
+</pre></div>
+
+
+<p>8.</p>
+<div class="highlight"><pre>su shaseng
+cd /tmp
+vim monkey.java
+写入我是沙僧，我是妖怪
+</pre></div>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://cestlavi3.github.io/tag/linux.html">Linux</a>
+    </p>
+  </div>
+</article>
+
+    <footer>
+<p>
+  &copy; CestLaVi3 2015 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>通过 <a href="http://getpelican.com" target="_blank">Pelican 生成</a> 主题使用了出色的<a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a></p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+         src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+</p>    </footer>
+  </main>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "name": "Linux常识及基本指令",
+  "headline": "Linux常识及基本指令",
+  "datePublished": "2015-07-30 16:25:00+08:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "CestLaVi3",
+    "url": "http://cestlavi3.github.io/author/cestlavi3.html"
+  },
+  "image": "profile.png",
+  "url": "http://cestlavi3.github.io/Linux常识及基本指令.html",
+  "description": "总结了最近所接触的Linux的相关知识点"
+}
+</script></body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://cestlavi3.github.io/theme/css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cestlavi3.github.io/theme/css/pygments.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cestlavi3.github.io/theme/css/font-awesome.min.css">
+  <link href="http://cestlavi3.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="WJ's Blog Atom">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+<meta name="author" content="CestLaVi3" />
+<meta name="description" content="记录了表的连接及相关说明，未完，后续更新" />
+<meta name="keywords" content="MySQL">
+<meta property="og:site_name" content="WJ's Blog"/>
+<meta property="og:title" content="表的连接"/>
+<meta property="og:description" content="记录了表的连接及相关说明，未完，后续更新"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://cestlavi3.github.io/表的连接.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2015-08-22 11:13:00+08:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://cestlavi3.github.io/author/cestlavi3.html">
+<meta property="article:section" content="tech"/>
+<meta property="article:tag" content="MySQL"/>
+<meta property="og:image" content="profile.png">  <title>WJ's Blog &ndash; 表的连接</title>
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="http://cestlavi3.github.io">
+        <img src="profile.png" alt="WJ's Blog" title="WJ's Blog">
+      </a>
+      <h1><a href="http://cestlavi3.github.io">WJ's Blog</a></h1>
+      <p>Web Developer</p>
+      <nav>
+        <ul class="list">
+          
+          <li><a href="http://CestLaVi3.github.io/index.html" target="_self">index</a></li>
+          <li><a href="/category/tech.html" target="_self">tech</a></li>
+          <li><a href="/category/life.html" target="_self">life</a></li>
+          <li><a href="http://CestLaVi3.github.io/About.html" target="_self">about</a></li>
+          <li><a href="http://CestLaVi3.github.io/tags.html" target="_self">tags</a></li>
+          <li><a href="http://CestLaVi3.github.io/Log.html" target="_self">log</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/CestLaVi3" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-weibo" href="http://weibo.com/234776564" target="_blank"><i class="fa fa-weibo"></i></a></li>
+        <li><a class="sc-envelope-o" href="mailto:CestLaVi3@hotmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+
+<article>
+  <header>
+    <h1 id="表的连接">表的连接</h1>
+    <p>发布于 2015-08-22 11:13    类别: <a href="http://cestlavi3.github.io/category/tech.html">tech</a></p>
+  </header>
+  <div>
+    <blockquote>
+<p>查询两个或两个以上表的内容，这很重要，在真正的项目开发过程中会发现，都需要多张表联合查询取数据。</p>
+</blockquote>
+<p>如果数据被分散保存到数据库当中，这种数据格式是没问题的，对于数据库来说，提供了一些检索的方式。这些检索方式可以协助你将数据合理的整合在一起，查询出来供用户查看。
+对于表来说，一般都是用来做查询，而不是做修改或删除的操作。</p>
+<h2>连接查询分类：</h2>
+<ol>
+<li><strong>内连接查询</strong>：自然连接、等值连接、不等值连接三种</li>
+<li><strong>自连接查询</strong>：对同一个表进行连接操作</li>
+<li><strong>外连接查询</strong>：左外连接、右外连接、全外连接三种</li>
+<li><strong>交叉连接查询</strong>：也作无条件查询，cross join:产生笛卡尔积</li>
+<li><strong>复杂查询</strong>：三个表以上的连接查询</li>
+</ol>
+<p>个人认为，这些分类中主要搞定<strong>内连接</strong>、<strong>外连接</strong>、<strong>左连接</strong>就足够了。</p>
+<h2>内连接</h2>
+<p>sys_book表如下：
+<img alt="Alt text" src="./1441690099514.png" /></p>
+<p>sys_book_type表如下：
+<img alt="Alt text" src="./1441690034401.png" /></p>
+<p>假设现在的需求是查询两张表全部的内容
+内连接必须保证某一个字段相等，对于这两张表来说，它们是靠type_id联系在一起的。
+<strong>sql语句如下：</strong></p>
+<div class="highlight"><pre><span class="k">select</span> <span class="o">*</span> <span class="k">from</span> <span class="n">sys_book_type</span> <span class="n">t</span> <span class="k">inner</span> <span class="k">join</span> <span class="n">sys_book</span> <span class="n">b</span>
+<span class="k">on</span> <span class="n">t</span><span class="p">.</span><span class="n">type_id</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="n">type_id</span>
+</pre></div>
+
+
+<p><strong>查询的结果：</strong>
+<img alt="Alt text" src="./1441693035046.png" /></p>
+<p>它的底层靠笛卡尔积，从sys_book_type表的第一条数据开始，因为要做内连接，所以将数据取出后上sys_book做查找，反复进行对比，将数据取出。</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://cestlavi3.github.io/tag/mysql.html">MySQL</a>
+    </p>
+  </div>
+</article>
+
+    <footer>
+<p>
+  &copy; CestLaVi3 2015 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>通过 <a href="http://getpelican.com" target="_blank">Pelican 生成</a> 主题使用了出色的<a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a></p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+         src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+</p>    </footer>
+  </main>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "name": "表的连接",
+  "headline": "表的连接",
+  "datePublished": "2015-08-22 11:13:00+08:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "CestLaVi3",
+    "url": "http://cestlavi3.github.io/author/cestlavi3.html"
+  },
+  "image": "profile.png",
+  "url": "http://cestlavi3.github.io/表的连接.html",
+  "description": "记录了表的连接及相关说明，未完，后续更新"
+}
+</script></body>
+</html>

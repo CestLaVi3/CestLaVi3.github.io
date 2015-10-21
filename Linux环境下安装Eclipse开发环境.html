@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://cestlavi3.github.io/theme/css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cestlavi3.github.io/theme/css/pygments.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cestlavi3.github.io/theme/css/font-awesome.min.css">
+  <link href="http://cestlavi3.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="WJ's Blog Atom">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+<meta name="author" content="CestLaVi3" />
+<meta name="description" content="记录了安装JDK、Tomcat、MySQL、Eclipse的开发环境过程" />
+<meta name="keywords" content="Linux, 环境配置">
+<meta property="og:site_name" content="WJ's Blog"/>
+<meta property="og:title" content="Linux环境下安装Eclipse开发环境"/>
+<meta property="og:description" content="记录了安装JDK、Tomcat、MySQL、Eclipse的开发环境过程"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://cestlavi3.github.io/Linux环境下安装Eclipse开发环境.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2015-07-25 10:03:00+08:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://cestlavi3.github.io/author/cestlavi3.html">
+<meta property="article:section" content="tech"/>
+<meta property="article:tag" content="Linux"/>
+<meta property="article:tag" content="环境配置"/>
+<meta property="og:image" content="profile.png">  <title>WJ's Blog &ndash; Linux环境下安装Eclipse开发环境</title>
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="http://cestlavi3.github.io">
+        <img src="profile.png" alt="WJ's Blog" title="WJ's Blog">
+      </a>
+      <h1><a href="http://cestlavi3.github.io">WJ's Blog</a></h1>
+      <p>Web Developer</p>
+      <nav>
+        <ul class="list">
+          
+          <li><a href="http://CestLaVi3.github.io/index.html" target="_self">index</a></li>
+          <li><a href="/category/tech.html" target="_self">tech</a></li>
+          <li><a href="/category/life.html" target="_self">life</a></li>
+          <li><a href="http://CestLaVi3.github.io/About.html" target="_self">about</a></li>
+          <li><a href="http://CestLaVi3.github.io/tags.html" target="_self">tags</a></li>
+          <li><a href="http://CestLaVi3.github.io/Log.html" target="_self">log</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/CestLaVi3" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-weibo" href="http://weibo.com/234776564" target="_blank"><i class="fa fa-weibo"></i></a></li>
+        <li><a class="sc-envelope-o" href="mailto:CestLaVi3@hotmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+
+<article>
+  <header>
+    <h1 id="Linux环境下安装Eclipse开发环境">Linux环境下安装Eclipse开发环境</h1>
+    <p>发布于 2015-07-25 10:03    类别: <a href="http://cestlavi3.github.io/category/tech.html">tech</a></p>
+  </header>
+  <div>
+    <h2>JDK</h2>
+<p>先卸载
+查 <code>rpm -qa |grep gcj</code>
+ <img alt="Alt text" src="./1445435952197.png" /></p>
+<p>卸载 <code>yum -y remove java-1.4.2-gcj-compat-src-1.4.2.0-40jpp.115</code>
+ <img alt="Alt text" src="./1445435955523.png" /></p>
+<p>查看<code>java –version</code>
+ <img alt="Alt text" src="./1445435958879.png" /></p>
+<p>退出 用<code>root</code>登录</p>
+<p><img alt="Alt text" src="./1445435963826.png" />
+<img alt="Alt text" src="./1445435966545.png" />
+<img alt="Alt text" src="./1445435970839.png" /></p>
+<p>进入Java文件夹下解压文件
+<code>tar –zxvf jdk-7u9-linux-i586.tar.gz</code>
+解压完毕！
+ <img alt="Alt text" src="./1445435973601.png" /></p>
+<p><code>vi ~/.bachrc</code>
+在文件中加入这三行</p>
+<div class="highlight"><pre><span class="x">export JAVA_HOME=/usr/java/jdk1.7.0_09</span>
+
+<span class="x">export PATH=</span><span class="p">$</span><span class="nv">JAVA_HOME</span><span class="x">/bin:</span><span class="p">$</span><span class="nv">PATH</span><span class="x"></span>
+
+<span class="x">export CLASSPATH=.:</span><span class="p">$</span><span class="nv">JAVA_HOME</span><span class="x">/lib/dt.jar:</span><span class="p">$</span><span class="nv">JAVA_HOME</span><span class="x">/lib/tools.jar</span>
+</pre></div>
+
+
+<p><img alt="Alt text" src="./1445435982617.png" /></p>
+<p><code>java –version</code>
+<img alt="Alt text" src="./1445435985676.png" /></p>
+<p>安装成功！</p>
+<h2>Tomcat</h2>
+<p>把tomcat的压缩包放在/usr/local下，解压。
+<code>tar -zxvf apache-tomcat-8.0.23.tar.gz</code>
+ <img alt="Alt text" src="./1445435992061.png" /></p>
+<p>键入命令:
+<code>/usr/local/apache-tomcat-8.0.23/bin/startup.sh</code>
+ <img alt="Alt text" src="./1445435997060.png" /></p>
+<h2>MySQL</h2>
+<p>把MySQL的安装包放在/usr下
+ <img alt="Alt text" src="./1445436000708.png" /></p>
+<p>进入MySQL，安装服务器
+<code>rpm -ivh MySQL-server-5.5.19-1.linux2.6.x86.rpm</code>
+ <img alt="Alt text" src="./1445436004666.png" /></p>
+<p>安装客户端
+<code>rpm -ivh MySQL-client-5.5.19-1.linux2.6.x86.rpm</code>
+ <img alt="Alt text" src="./1445436009611.png" /></p>
+<p>查看服务是否开启 <code>netstat  –nat</code>
+ <img alt="Alt text" src="./1445436012153.png" /></p>
+<p>3306证明服务已开启。
+进入mysql
+ <img alt="Alt text" src="./1445436015505.png" /></p>
+<p>退出 Ctrl+C
+ <img alt="Alt text" src="./1445436019274.png" /></p>
+<h2>Eclipse</h2>
+<p>在/usr下新建eclipse文件夹并把压缩包放进来。
+进入文件夹
+ <img alt="Alt text" src="./1445436023562.png" /></p>
+<p>开始解压
+<code>tar -zxvf eclipse-jee-luna-SR2-linux-gtk.tar.gz</code>
+解压完成后进入eclipse打开
+./eclipse
+ <img alt="Alt text" src="./1445436027592.png" /></p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://cestlavi3.github.io/tag/linux.html">Linux</a>
+      <a href="http://cestlavi3.github.io/tag/huan-jing-pei-zhi.html">环境配置</a>
+    </p>
+  </div>
+</article>
+
+    <footer>
+<p>
+  &copy; CestLaVi3 2015 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>通过 <a href="http://getpelican.com" target="_blank">Pelican 生成</a> 主题使用了出色的<a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a></p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+         src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+</p>    </footer>
+  </main>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "name": "Linux环境下安装Eclipse开发环境",
+  "headline": "Linux环境下安装Eclipse开发环境",
+  "datePublished": "2015-07-25 10:03:00+08:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "CestLaVi3",
+    "url": "http://cestlavi3.github.io/author/cestlavi3.html"
+  },
+  "image": "profile.png",
+  "url": "http://cestlavi3.github.io/Linux环境下安装Eclipse开发环境.html",
+  "description": "记录了安装JDK、Tomcat、MySQL、Eclipse的开发环境过程"
+}
+</script></body>
+</html>

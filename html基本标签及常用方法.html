@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="http://cestlavi3.github.io/theme/css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cestlavi3.github.io/theme/css/pygments.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cestlavi3.github.io/theme/css/font-awesome.min.css">
+  <link href="http://cestlavi3.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="WJ's Blog Atom">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+<meta name="author" content="CestLaVi3" />
+<meta name="description" content="记录了html基本标签及常用方法" />
+<meta name="keywords" content="Html, 前端">
+<meta property="og:site_name" content="WJ's Blog"/>
+<meta property="og:title" content="html基本标签及常用方法"/>
+<meta property="og:description" content="记录了html基本标签及常用方法"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://cestlavi3.github.io/html基本标签及常用方法.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2015-08-17 19:37:00+08:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="http://cestlavi3.github.io/author/cestlavi3.html">
+<meta property="article:section" content="tech"/>
+<meta property="article:tag" content="Html"/>
+<meta property="article:tag" content="前端"/>
+<meta property="og:image" content="profile.png">  <title>WJ's Blog &ndash; html基本标签及常用方法</title>
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="http://cestlavi3.github.io">
+        <img src="profile.png" alt="WJ's Blog" title="WJ's Blog">
+      </a>
+      <h1><a href="http://cestlavi3.github.io">WJ's Blog</a></h1>
+      <p>Web Developer</p>
+      <nav>
+        <ul class="list">
+          
+          <li><a href="http://CestLaVi3.github.io/index.html" target="_self">index</a></li>
+          <li><a href="/category/tech.html" target="_self">tech</a></li>
+          <li><a href="/category/life.html" target="_self">life</a></li>
+          <li><a href="http://CestLaVi3.github.io/About.html" target="_self">about</a></li>
+          <li><a href="http://CestLaVi3.github.io/tags.html" target="_self">tags</a></li>
+          <li><a href="http://CestLaVi3.github.io/Log.html" target="_self">log</a></li>
+        </ul>
+      </nav>
+      <ul class="social">
+        <li><a class="sc-github" href="https://github.com/CestLaVi3" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-weibo" href="http://weibo.com/234776564" target="_blank"><i class="fa fa-weibo"></i></a></li>
+        <li><a class="sc-envelope-o" href="mailto:CestLaVi3@hotmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+
+<article>
+  <header>
+    <h1 id="html基本标签及常用方法">html基本标签及常用方法</h1>
+    <p>发布于 2015-08-17 19:37    类别: <a href="http://cestlavi3.github.io/category/tech.html">tech</a></p>
+  </header>
+  <div>
+    <h2><code>&lt;head&gt;</code>区域</h2>
+<h3><code>&lt;title&gt;</code>标题</h3>
+<p>在<code>&lt;head&gt;</code>中，定义文档的标题，最终将显示在浏览器标题栏上。</p>
+<h3><code>&lt;meta&gt;</code></h3>
+<ul>
+<li>定义页面元信息，主要包含了搜索信息。</li>
+<li>META标签分两大部分：HTTP标题信息(HTTP-EQUIV)和页面描述信息(NAME)</li>
+<li>HTTP-EQUIV 似于HTTP的头部协议，它回应给浏览器一些有用的信息，以帮助正确和精确地显示网页内容 ,响应报头信息，如页面编码、缓存模式等等。</li>
+<li>NAME 定义页面基本信息，这些信息是提供给网络搜索引擎的，搜索引擎通过这些信息可以找到页面。</li>
+<li><code>Content-Type</code>和<code>Content-Language</code> (显示字符集的设定) 。使用如下两行来解决html的乱码问题</li>
+</ul>
+<div class="highlight"><pre><span class="nt">&lt;Meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Type&quot;</span> <span class="na">Content=</span><span class="s">&quot;text/html; Charset=gb2312&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;Meta</span> <span class="na">http-equiv=</span><span class="s">&quot;Content-Language&quot;</span> <span class="na">Content=</span><span class="s">&quot;zh-CN&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
+<ul>
+<li>name属性用于描述页面内容，主要是向搜索引擎提供查询关键字等</li>
+<li>Keywords－关键字</li>
+</ul>
+<div class="highlight"><pre><span class="nt">&lt;Meta</span> <span class="na">name=</span><span class="s">“Keywords”</span> <span class="na">Content=</span><span class="s">&quot;vacation,greece&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
+<ul>
+<li>Description－简介</li>
+</ul>
+<div class="highlight"><pre><span class="nt">&lt;Meta</span> <span class="na">name=</span><span class="s">&quot;Description&quot;</span> <span class="na">Content=</span><span class="s">&quot;你网页的简述&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
+<ul>
+<li>Author－作者</li>
+</ul>
+<div class="highlight"><pre><span class="nt">&lt;Meta</span> <span class="na">name=</span><span class="s">&quot;Author&quot;</span> <span class="na">Content=</span><span class="s">&quot;张三，abc@sina.com&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
+<ul>
+<li>Copyright (版权)</li>
+</ul>
+<div class="highlight"><pre><span class="nt">&lt;Meta</span> <span class="na">name=</span><span class="s">&quot;Copyright&quot;</span> <span class="na">Content=</span><span class="s">&quot;本页版权归Zerospace所有。All Rights Reserved&quot;</span><span class="nt">&gt;</span>
+</pre></div>
+
+
+<h2><code>&lt;body&gt;</code></h2>
+<h3><code>&lt;h1&gt;</code>到<code>&lt;h6&gt;</code>标题标签</h3>
+<p>标题标签是显示标题文字从h1到h6，从大到小的过程。SEO也按照标题标签的级别来选择信息，所以合理使用标题标签也能提高网页被爬取到的机率。</p>
+<h3><code>&lt;strong&gt;</code>强调文本</h3>
+<p>Strong 标签用于强调文本，但它强调的程度更强一些。
+<em> 浏览器通常会以加粗的字体（相对于斜体）来显示其中的内容，这样用户就可以把这两个标签区分开来了。
+</em> 使用这个标签的理由是，我们认为教程摘要不仅概括了其所在页面的内容，而且位于页面的最重要的位置，其内容自然是非常重要的且值得强调的</p>
+<h3><code>&lt;font&gt;</code>文本标签</h3>
+<p>Font标签规定文本的字体、字体尺寸、字体颜色（不建议使用）
+<em> 字体尺寸
+<code>&lt;font  size=#&gt; 文字&lt;/font&gt;</code>  # =1，2，3，4，5，6
+</em> 字体颜色
+<code>&lt;font color=#&gt; 文字 &lt;/font&gt;</code>  # =“#rrggbb”
+* 16 进制数码，或者是下列预定义色彩Black, Olive, Teal, Red, Blue
+字体
+<code>&lt;font face="#, #, ..., #"&gt;..&lt;/font&gt;</code> #=客户端可获得的字体</p>
+<h3><code>&lt;a&gt;</code>链接标签</h3>
+<p>HTML 使用超级链接与网络上的另一个文档相连，通俗的说就是通过连接src路径来访问其他网页资源。
+属性：
+<code>href</code>：规定链接指向的页面的 UR
+<code>target</code>:规定在何处打开链接文档
+<img alt="Alt text" src="./1445405960294.png" /></p>
+<ul>
+<li>_blank:浏览器总在一个新打开、未命名的窗口中载入目标文档</li>
+<li>_parent:这个目标使得文档载入父窗口或者包含来超链接引用的框架的框架集。如果这个引用是在窗口或者在顶级框架中，那么它与目标 _self 等效。</li>
+<li>_self:这个目标的值对所有没有指定目标的 <code>&lt;a&gt;</code> 标签是默认目标，它使得目标文档载入并显示在相同的框架或者窗口中作为源文档。这个目标是多余且不必要的，除非和文档标题 <code>&lt;base&gt;</code>标签中的 target 属性一起使用。</li>
+<li>_top:这个目标使得文档载入包含这个超链接的窗口，用 _top 目标将会清除所有被包含的框架并将文档载入整个浏览器窗口。</li>
+</ul>
+<h3><code>&lt;P&gt;</code>段落标签</h3>
+<p>元素会自动在其前后创建一些空白。浏览器会自动添加这些空间，您也可以在样式表中规定
+<code>align</code>居中显示
+<code>&lt;b&gt;</code>加粗
+<code>&lt;i&gt;</code>斜体</p>
+<h3><code>&lt;br/&gt;</code>换行</h3>
+<p>呈现换行符效果
+<em> <code>&lt;br/&gt;</code>可插入一个简单的换行符。
+</em> <code>&lt;br/&gt;</code>标签是空标签（意味着它没有结束标签，因此这是错误的：<code>&lt;br&gt;&lt;/br&gt;</code>）。在 XHTML 中，把结束标签放在开始标签中，也就是 <code>&lt;br/&gt;</code>。
+* 请注意，<code>&lt;br/&gt;</code>标签只是简单地开始新的一行，而当浏览器遇到 <code>&lt;p&gt;</code>标签时，通常会在相邻的段落之间插入一些垂直的间距</p>
+<h3>列表标签</h3>
+<h4>定义列表</h4>
+<ul>
+<li><code>&lt;dl&gt;</code>：自定义列表</li>
+<li><code>&lt;dt&gt;</code>：自定义标题</li>
+<li><code>&lt;dd&gt;</code>：自定义内容<blockquote>
+<p>dt在最左边 dd 也单独占一行但是有错位</p>
+</blockquote>
+</li>
+</ul>
+<h4><code>ol</code>有序列表</h4>
+<p>type属性默认值为1 表示从哪里开始自动排列</p>
+<h4><code>ul</code>无序列表</h4>
+<p>type属性表示前面图案形状</p>
+<h3>内联元素 块级元素</h3>
+<p><code>div</code>特点：高度可设，宽度可设，独立占用一行。
+<code>span</code>特点：不可设置宽度高度，不能设置margin，长度包裹内容。
+span可以变成块状元素，设置display属性为block，相反的，把div变成内联，把display属性设置为inline即可。
+文本框是内联块状 可以设置宽度和高度 display为inlineblock是内联块状元素
+<code>内联块</code>的特点：不独自占一行，宽度和高度可以设定。比如<code>&lt;a&gt;</code>本来是内联的，但好多时候做导航栏把它要设置为块。</p>
+<blockquote>
+<p>一般来说，不包含子元素的才是内联块</p>
+</blockquote>
+<h3><code>&lt;img&gt;</code>链接图象标签</h3>
+<p>默认相对路径跟当前html路径相同 <code>../</code>表示往上移一级目录，网上的图片为绝对路径。</p>
+<p><code>alt</code>表示默认提示值，应用场景为您所查看的图片已删除，一般来说加一个红色的边框border显示。</p>
+<h3><code>&lt;hr&gt;</code>水平线标签</h3>
+<p>默认贯穿全屏，可以设定宽度、高度，单位是像素px，可以改变颜色。个人经验来讲，其样式如下：</p>
+<div class="highlight"><pre><span class="c">/**</span>
+<span class="c">宽度、高度、颜色可替换</span>
+<span class="c">**/</span>
+<span class="nt">width</span><span class="nd">:500px</span><span class="o">;</span>
+<span class="nt">height</span><span class="nd">:3px</span><span class="o">;</span>
+<span class="nt">border</span><span class="nd">:none</span><span class="o">;</span>
+<span class="nt">background-color</span><span class="o">:</span><span class="nf">#cecece</span><span class="o">;</span>
+</pre></div>
+
+
+<h3><code>&lt;table&gt;</code>表格标签</h3>
+<ul>
+<li>表头 <code>&lt;th&gt;</code></li>
+<li>行<code>&lt;tr&gt;</code></li>
+<li>列<code>&lt;td&gt;</code></li>
+</ul>
+<p>border设定边框，可以改变高度宽度，高度改变行，宽度改变列。每个格内容长默认自动加长，通过<code>&lt;tr&gt;</code>下的<code>&lt;thead&gt;</code>可以实现表格内自动换行。可以设定背景颜色，背景图片，<code>cellpadding</code>表格内间距，表格与外边框之间的距离，单位都是像素，表格的位置由align属性决定。</p>
+<h3><code>&lt;form&gt;</code>表单标签</h3>
+<p>一类用于显示，一类用于输出。
+* <code>form</code>标签：表单，完成用户与服务器的交互。原则上讲所有的表单标签都应该放在form里。
+readonly是HTML的一个bug，不管他等于什么值，只要他出现了，都只读。但javascript可以识别，解决这个缺陷就是使用javascript。disabled不可改变。</p>
+<ul>
+<li>
+<p><code>&lt;select&gt;</code>下拉框
+select与option元素合用。
+length只能获取到option的数量，用于js。</p>
+</li>
+<li>
+<p><code>option</code>：value属性设置option的提交值，如果value为空，则提交option标签之间的内容。
+text也是在HTML中使用无效，要通过javascript实现，可以设定或获取到option标签之间的内容。
+selectedindex：默认选中。
+selected：设定选项被选中，多个被选中执行最后一个。</p>
+</li>
+<li>
+<p><code>&lt;textArea&gt;</code>文本域
+多行文本输入框。value不能在HTML中使用，但可以在js当中使用，作为显示值和提交值。
+row是页面显示的行数，col是页面显示的列数，因为数字字母文字宽度不等，所以列数要大概估计。
+wrap，默认soft自动换行，off不自动换行。</p>
+</li>
+<li>
+<p><code>checkbox</code>多选框
+name value type check默认选中
+要写好名字，因为后台是按名字分组提交的。</p>
+</li>
+<li>
+<p><code>radio</code>单选按钮
+要分组写好name check默认选中 与checkbox使用方式差不多。单选按钮的名称必须相同，否则不能控制单选checked。</p>
+</li>
+<li>
+<p><code>text</code>文本框
+size只限定输入字段宽度，maxlength设定最大输入长度。</p>
+</li>
+<li>
+<p><code>button</code>按钮
+只是页面显示按钮，想要提交必须通过js实现。</p>
+</li>
+<li>
+<p><code>file</code>元素
+在本地选择文件路径，普通表单信息是数值信息，文件是二进制信息，根据名字获取二进制代码，服务器根据二进制代码生成文件。</p>
+</li>
+<li>
+<p><code>reset</code>重置按钮
+Reset可以重置文本框里面的内容，并不是把所有信息清空，而是还原到刚加载页面状态。</p>
+</li>
+<li>
+<p><code>submit</code>元素
+提交表单，submit可以提交表单内容。</p>
+</li>
+</ul>
+<h3>frame框架</h3>
+<p>frame用于分割窗口，也就是浏览器在显示页面时分成几部分，每部分由独立的页面显示，如图
+<img alt="Alt text" src="./1445403073946.png" />
+<img alt="Alt text" src="./1445403090231.png" /></p>
+<h3><code>&lt;iframe&gt;</code>标签</h3>
+<p>包含其他页面的页面信息，width最好用百分比，<code>height</code>不支持百分比，只能用js判断页面高度 <code>scrolling</code>显示滚动条。</p>
+<h3>特殊字符</h3>
+<p><img alt="Alt text" src="./1445404012538.png" /></p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://cestlavi3.github.io/tag/html.html">Html</a>
+      <a href="http://cestlavi3.github.io/tag/qian-duan.html">前端</a>
+    </p>
+  </div>
+</article>
+
+    <footer>
+<p>
+  &copy; CestLaVi3 2015 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>通过 <a href="http://getpelican.com" target="_blank">Pelican 生成</a> 主题使用了出色的<a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a></p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+         src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+</p>    </footer>
+  </main>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "name": "html基本标签及常用方法",
+  "headline": "html基本标签及常用方法",
+  "datePublished": "2015-08-17 19:37:00+08:00",
+  "dateModified": "",
+  "author": {
+    "@type": "Person",
+    "name": "CestLaVi3",
+    "url": "http://cestlavi3.github.io/author/cestlavi3.html"
+  },
+  "image": "profile.png",
+  "url": "http://cestlavi3.github.io/html基本标签及常用方法.html",
+  "description": "记录了html基本标签及常用方法"
+}
+</script></body>
+</html>
