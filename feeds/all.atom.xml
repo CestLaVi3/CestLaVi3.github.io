@@ -7,18 +7,18 @@
 &lt;li&gt;
 &lt;p&gt;新建画布：&lt;code&gt;ctrl+N&lt;/code&gt;
 直接操作步骤：依次点击工具栏“文件”—“新建”
-&lt;img alt="alt text" src="./1445411650491.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445411650491.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;新建图层：&lt;code&gt;ctrl+shift+alt+N&lt;/code&gt;
 直接操作步骤：依次点击工具栏“图层”—“新建”—“图层”（成功效果图如下）
-&lt;img alt="alt text" src="./1445411793213.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445411793213.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;取消选区：&lt;code&gt;ctrl+D&lt;/code&gt;
 直接操作步骤：在选取位置右击鼠标—“取消选择”（效果图如下）
-&lt;img alt="alt text" src="./1445411846275.png" /&gt;
-&lt;img alt="alt text" src="./1445411852935.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445411846275.png" /&gt;
+&lt;img alt="alt text" src="/images/1445411852935.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;利用选框工具画正圆，正方形：鼠标操作过程按住&lt;code&gt;ctrl+alt&lt;/code&gt;&lt;/p&gt;
@@ -28,9 +28,9 @@
 填充前景色：&lt;code&gt;alt+Backspace&lt;/code&gt;
 直接操作步骤：（流程如下图）
 在右图处选好颜色背景颜色后，按下图步骤操作
-&lt;img alt="alt text" src="./1445411977568.png" /&gt;
-&lt;img alt="alt text" src="./1445411983258.png" /&gt;
-&lt;img alt="alt text" src="./1445411986962.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445411977568.png" /&gt;
+&lt;img alt="alt text" src="/images/1445411983258.png" /&gt;
+&lt;img alt="alt text" src="/images/1445411986962.png" /&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;注：以上两组快捷键应用于有选区的时候操作，无选区的时候在以上操作的基础上还要加上Shift键，Shift的作用是锁定空白像素。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -47,17 +47,17 @@
 &lt;li&gt;
 &lt;p&gt;结束字体编辑：&lt;code&gt;ctrl+Enter&lt;/code&gt;
 调出文字编辑面板：&lt;code&gt;ctrl+T&lt;/code&gt;
-&lt;img alt="alt text" src="./1445412098679.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412098679.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;输出图层：选中图层后按&lt;code&gt;Delete&lt;/code&gt;键
-&lt;img alt="alt text" src="./1445412120925.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412120925.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;路径转换为选区：&lt;code&gt;ctrl+Enter&lt;/code&gt;
 效果图如下所示:
-&lt;img alt="alt text" src="./1445412161379.png" /&gt;
-&lt;img alt="alt text" src="./1445412198934.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412161379.png" /&gt;
+&lt;img alt="alt text" src="/images/1445412198934.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;辅助扣出的图：&lt;code&gt;ctrl+J&lt;/code&gt;（即上面右图中选区里面的图）&lt;/p&gt;
@@ -65,7 +65,7 @@
 &lt;li&gt;
 &lt;p&gt;调出或隐藏标尺：&lt;code&gt;ctrl+R&lt;/code&gt;
 下图为标尺：
-&lt;img alt="alt text" src="./1445412229630.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412229630.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;调出参考线：&lt;code&gt;ctrl+;&lt;/code&gt;&lt;/p&gt;
@@ -73,12 +73,12 @@
 &lt;li&gt;
 &lt;p&gt;调出网格线：&lt;code&gt;ctrl+"&lt;/code&gt;
 下图为网格线
-&lt;img alt="alt text" src="./1445412282244.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412282244.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;调出首选项：&lt;code&gt;ctrl+K&lt;/code&gt;
 直接操作步骤：可在工具栏“窗口”中找到
-&lt;img alt="alt text" src="./1445412303718.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412303718.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;放大：&lt;code&gt;ctrl+加号&lt;/code&gt;&lt;/p&gt;
@@ -94,58 +94,58 @@
 &lt;h2&gt;切出网页片段中的图片&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;将准备好的图片拖入PS中
- &lt;img alt="alt text" src="./1445412471816.png" /&gt;&lt;/li&gt;
+ &lt;img alt="alt text" src="/images/1445412471816.png" /&gt;&lt;/li&gt;
 &lt;li&gt;为方便切图，将图片放大，按&lt;code&gt;ctrl+加号&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;将待切部分移动到方便区域后选择“切片”工具
-&lt;img alt="alt text" src="./1445412505996.png" /&gt;
-&lt;img alt="alt text" src="./1445412510309.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412505996.png" /&gt;
+&lt;img alt="alt text" src="/images/1445412510309.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;切图
-&lt;img alt="alt text" src="./1445412542000.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412542000.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;调整所切区域，使切线尽量靠近你想要切的区域的边缘部分
-&lt;img alt="alt text" src="./1445412563712.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412563712.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;切好后保存
 点击工具栏“保存”—“”存储为web所用格式
-&lt;img alt="alt text" src="./1445412594110.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412594110.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;在下框中设置格式：选择图片类型（png,jpg等）和图片品质（1-100）
-&lt;img alt="alt text" src="./1445412609785.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412609785.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;第一次存储选择其他选项，按下面3张图所示进行设置，最后点击保存。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img alt="alt text" src="./1445412626249.png" /&gt;
-&lt;img alt="alt text" src="./1445412630285.png" /&gt;
-&lt;img alt="alt text" src="./1445412635895.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="alt text" src="/images/1445412626249.png" /&gt;
+&lt;img alt="alt text" src="/images/1445412630285.png" /&gt;
+&lt;img alt="alt text" src="/images/1445412635895.png" /&gt;&lt;/p&gt;
 &lt;h2&gt;测量两元素之间的距离&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;将准备好的图片拖入PS中
-&lt;img alt="alt text" src="./1445412664568.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412664568.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;同样，为方便操作放大图片&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;选择矩形选框
-&lt;img alt="alt text" src="./1445412682725.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412682725.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;按下图将矩形选框置于两者之间
-&lt;img alt="alt text" src="./1445412699755.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412699755.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;调出信息窗口，在信息窗口查看距离信息
 点击工具栏“窗口”—“信息”
-&lt;img alt="alt text" src="./1445412720533.png" /&gt;&lt;/p&gt;
+&lt;img alt="alt text" src="/images/1445412720533.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;查看元素大小和测量两元素距离步骤一样，将选框选中待测元素即可。&lt;/p&gt;
@@ -166,9 +166,9 @@
 &lt;p&gt;个人认为，这些分类中主要搞定&lt;strong&gt;内连接&lt;/strong&gt;、&lt;strong&gt;外连接&lt;/strong&gt;、&lt;strong&gt;左连接&lt;/strong&gt;就足够了。&lt;/p&gt;
 &lt;h2&gt;内连接&lt;/h2&gt;
 &lt;p&gt;sys_book表如下：
-&lt;img alt="Alt text" src="./1441690099514.png" /&gt;&lt;/p&gt;
+&lt;img alt="Alt text" src="/images/1441690099514.png" /&gt;&lt;/p&gt;
 &lt;p&gt;sys_book_type表如下：
-&lt;img alt="Alt text" src="./1441690034401.png" /&gt;&lt;/p&gt;
+&lt;img alt="Alt text" src="/images/1441690034401.png" /&gt;&lt;/p&gt;
 &lt;p&gt;假设现在的需求是查询两张表全部的内容
 内连接必须保证某一个字段相等，对于这两张表来说，它们是靠type_id联系在一起的。
 &lt;strong&gt;sql语句如下：&lt;/strong&gt;&lt;/p&gt;
@@ -178,7 +178,7 @@
 
 
 &lt;p&gt;&lt;strong&gt;查询的结果：&lt;/strong&gt;
-&lt;img alt="Alt text" src="./1441693035046.png" /&gt;&lt;/p&gt;
+&lt;img alt="Alt text" src="/images/1441693035046.png" /&gt;&lt;/p&gt;
 &lt;p&gt;它的底层靠笛卡尔积，从sys_book_type表的第一条数据开始，因为要做内连接，所以将数据取出后上sys_book做查找，反复进行对比，将数据取出。&lt;/p&gt;</summary><category term="MySQL"></category></entry><entry><title>html基本标签及常用方法</title><link href="http://cestlavi3.github.io/html%E5%9F%BA%E6%9C%AC%E6%A0%87%E7%AD%BE%E5%8F%8A%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95.html" rel="alternate"></link><updated>2015-08-17T19:37:00+08:00</updated><author><name>CestLaVi3</name></author><id>tag:cestlavi3.github.io,2015-08-17:html基本标签及常用方法.html</id><summary type="html">&lt;h2&gt;&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;区域&lt;/h2&gt;
 &lt;h3&gt;&lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt;标题&lt;/h3&gt;
 &lt;p&gt;在&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;中，定义文档的标题，最终将显示在浏览器标题栏上。&lt;/p&gt;
@@ -245,7 +245,7 @@
 属性：
 &lt;code&gt;href&lt;/code&gt;：规定链接指向的页面的 UR
 &lt;code&gt;target&lt;/code&gt;:规定在何处打开链接文档
-&lt;img alt="Alt text" src="./1445405960294.png" /&gt;&lt;/p&gt;
+&lt;img alt="Alt text" src="/images/1445405960294.png" /&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;_blank:浏览器总在一个新打开、未命名的窗口中载入目标文档&lt;/li&gt;
 &lt;li&gt;_parent:这个目标使得文档载入父窗口或者包含来超链接引用的框架的框架集。如果这个引用是在窗口或者在顶级框架中，那么它与目标 _self 等效。&lt;/li&gt;
@@ -361,12 +361,12 @@ Reset可以重置文本框里面的内容，并不是把所有信息清空，而
 &lt;/ul&gt;
 &lt;h3&gt;frame框架&lt;/h3&gt;
 &lt;p&gt;frame用于分割窗口，也就是浏览器在显示页面时分成几部分，每部分由独立的页面显示，如图
-&lt;img alt="Alt text" src="./1445403073946.png" /&gt;
-&lt;img alt="Alt text" src="./1445403090231.png" /&gt;&lt;/p&gt;
+&lt;img alt="Alt text" src="/images/1445403073946.png" /&gt;
+&lt;img alt="Alt text" src="/images/1445403090231.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;&lt;code&gt;&amp;lt;iframe&amp;gt;&lt;/code&gt;标签&lt;/h3&gt;
 &lt;p&gt;包含其他页面的页面信息，width最好用百分比，&lt;code&gt;height&lt;/code&gt;不支持百分比，只能用js判断页面高度 &lt;code&gt;scrolling&lt;/code&gt;显示滚动条。&lt;/p&gt;
 &lt;h3&gt;特殊字符&lt;/h3&gt;
-&lt;p&gt;&lt;img alt="Alt text" src="./1445404012538.png" /&gt;&lt;/p&gt;</summary><category term="Html"></category><category term="前端"></category></entry><entry><title>Linux常识及基本指令</title><link href="http://cestlavi3.github.io/Linux%E5%B8%B8%E8%AF%86%E5%8F%8A%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4.html" rel="alternate"></link><updated>2015-07-30T16:25:00+08:00</updated><author><name>CestLaVi3</name></author><id>tag:cestlavi3.github.io,2015-07-30:Linux常识及基本指令.html</id><summary type="html">&lt;h2&gt;Linux的版本？内核版本号的组成？&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="/images/1445404012538.png" /&gt;&lt;/p&gt;</summary><category term="Html"></category><category term="前端"></category></entry><entry><title>Linux常识及基本指令</title><link href="http://cestlavi3.github.io/Linux%E5%B8%B8%E8%AF%86%E5%8F%8A%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4.html" rel="alternate"></link><updated>2015-07-30T16:25:00+08:00</updated><author><name>CestLaVi3</name></author><id>tag:cestlavi3.github.io,2015-07-30:Linux常识及基本指令.html</id><summary type="html">&lt;h2&gt;Linux的版本？内核版本号的组成？&lt;/h2&gt;
 &lt;p&gt;内核版本、发行版本Linux的内核本号由3个数字组成：X.Y.Z。
 &lt;em&gt; X：主版本号，通常在一段时间内比较稳定。
 &lt;/em&gt; Y：次版本号，偶数代表正式版本，可公开发行；奇数代表测试版
@@ -403,101 +403,101 @@ linux下用字符表示的文件类型：
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;pwd&lt;/code&gt; 查看当前主目录（root直接放在根目录 只有自己可以读）
- &lt;img alt="Alt text" src="./1445394966396.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445394966396.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;su 用户名&lt;/code&gt; 切换普通用户，超级用户的主目录是根目录的子目录，普通用户的主目录是根目录的孙子目录。
- &lt;img alt="Alt text" src="./1445394976798.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445394976798.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;su -&lt;/code&gt; 切换到超级用户
- &lt;img alt="Alt text" src="./1445395030046.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395030046.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;ls&lt;/code&gt; 查看文件（不包括隐藏文件）
- &lt;img alt="Alt text" src="./1445395035023.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395035023.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;ls -a&lt;/code&gt; 列出全部（文件前带.的为隐藏文件）
- &lt;img alt="Alt text" src="./1445395039941.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395039941.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;ls -l&lt;/code&gt; 长格式列出全部文件 等同于ll
- &lt;img alt="Alt text" src="./1445395048098.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395048098.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;cd 2&lt;/code&gt; 进入文件2中（等同cd ~/2）
- &lt;img alt="Alt text" src="./1445395054489.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395054489.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;cd ..&lt;/code&gt;跳回上一级目录
- &lt;img alt="Alt text" src="./1445395058752.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395058752.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;cd /&lt;/code&gt; 切换到根目录
- &lt;img alt="Alt text" src="./1445395065895.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395065895.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;cd&lt;/code&gt;回到用户主目录
- &lt;img alt="Alt text" src="./1445395073471.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395073471.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;touch 1&lt;/code&gt; 创建文件1
- &lt;img alt="Alt text" src="./1445395078758.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395078758.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;mkdir 5&lt;/code&gt; 创建目录5
- &lt;img alt="Alt text" src="./1445395084467.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395084467.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;cp 1 3&lt;/code&gt; 拷贝1文件到3目录
- &lt;img alt="Alt text" src="./1445395091875.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395091875.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;mv 1 2&lt;/code&gt; 剪切1文件到2目录：
- &lt;img alt="Alt text" src="./1445395096353.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395096353.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;mv&lt;/code&gt;还可以用于重命名&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;mv 1 aaa&lt;/code&gt; 把文件1改名为aaa
- &lt;img alt="Alt text" src="./1445395104223.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395104223.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;cp -r 2 3&lt;/code&gt; 把2目录复制到3目录里
- &lt;img alt="Alt text" src="./1445395109655.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395109655.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;rm 1&lt;/code&gt; 删除文件1
- &lt;img alt="Alt text" src="./1445395116824.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395116824.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;rmdir 1&lt;/code&gt; 删除空目录1 只能删除空目录（非空先rm再删除）
- &lt;img alt="Alt text" src="./1445395122752.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395122752.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;rm -r 4&lt;/code&gt; 逐层强制删除非空目录（询问）
- &lt;img alt="Alt text" src="./1445395132102.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395132102.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;rm –rf 2&lt;/code&gt; 强制删除非空目录不询问
- &lt;img alt="Alt text" src="./1445395139462.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395139462.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;clear&lt;/code&gt; 清屏&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;cal&lt;/code&gt; 当月日历
- &lt;img alt="Alt text" src="./1445395153120.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395153120.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;cal 2015&lt;/code&gt; 全年日历
- &lt;img alt="Alt text" src="./1445395159008.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395159008.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;cal 5 2012&lt;/code&gt;  查看2012年五月
- &lt;img alt="Alt text" src="./1445395163196.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445395163196.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;Tab&lt;/code&gt; 按两下查看一共有所少命令&lt;/p&gt;
@@ -568,39 +568,39 @@ cat /etc/group
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Alt text" src="./1445395177031.png" /&gt;
-&lt;img alt="Alt text" src="./1445395180914.png" /&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="/images/1445395177031.png" /&gt;
+&lt;img alt="Alt text" src="/images/1445395180914.png" /&gt;
 2.3.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;useradd -d /home/tangseng -g shenxian -s /bin/bash tangseng
 passwd tangseng
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Alt text" src="./1445395186268.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="/images/1445395186268.png" /&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;useradd -d /home/shaseng -g shenxian -s /bin/bash shaseng
 passwd shaseng
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Alt text" src="./1445395189050.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="/images/1445395189050.png" /&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;useradd -d /home/wukong -g yaoguai -s /bin/bash wukong
 passwd wukong
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Alt text" src="./1445395194190.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="/images/1445395194190.png" /&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;useradd -d /home/bajie -g yaoguai -s /bin/bash bajie
 passwd bajie
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Alt text" src="./1445395199818.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="/images/1445395199818.png" /&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;cat /etc/passwd
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Alt text" src="./1445395204075.png" /&gt;
-&lt;img alt="Alt text" src="./1445395211866.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="/images/1445395204075.png" /&gt;
+&lt;img alt="Alt text" src="/images/1445395211866.png" /&gt;&lt;/p&gt;
 &lt;p&gt;4.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;su wukong
 cd /tmp
@@ -608,7 +608,7 @@ touch monkey.java
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Alt text" src="./1445395217416.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="/images/1445395217416.png" /&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;vim monkey.java （写入I am monkey）
 chmod 770 monkey.java(所有者与同组人可读可写可执行，其他人不可读不可写不可执行)
 &lt;/pre&gt;&lt;/div&gt;
@@ -647,19 +647,19 @@ vim monkey.java
 &lt;/pre&gt;&lt;/div&gt;</summary><category term="Linux"></category></entry><entry><title>Linux环境下安装Eclipse开发环境</title><link href="http://cestlavi3.github.io/Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E5%AE%89%E8%A3%85Eclipse%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.html" rel="alternate"></link><updated>2015-07-25T10:03:00+08:00</updated><author><name>CestLaVi3</name></author><id>tag:cestlavi3.github.io,2015-07-25:Linux环境下安装Eclipse开发环境.html</id><summary type="html">&lt;h2&gt;JDK&lt;/h2&gt;
 &lt;p&gt;先卸载
 查 &lt;code&gt;rpm -qa |grep gcj&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435952197.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435952197.png" /&gt;&lt;/p&gt;
 &lt;p&gt;卸载 &lt;code&gt;yum -y remove java-1.4.2-gcj-compat-src-1.4.2.0-40jpp.115&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435955523.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435955523.png" /&gt;&lt;/p&gt;
 &lt;p&gt;查看&lt;code&gt;java –version&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435958879.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435958879.png" /&gt;&lt;/p&gt;
 &lt;p&gt;退出 用&lt;code&gt;root&lt;/code&gt;登录&lt;/p&gt;
-&lt;p&gt;&lt;img alt="Alt text" src="./1445435963826.png" /&gt;
-&lt;img alt="Alt text" src="./1445435966545.png" /&gt;
-&lt;img alt="Alt text" src="./1445435970839.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="/images/1445435963826.png" /&gt;
+&lt;img alt="Alt text" src="/images/1445435966545.png" /&gt;
+&lt;img alt="Alt text" src="/images/1445435970839.png" /&gt;&lt;/p&gt;
 &lt;p&gt;进入Java文件夹下解压文件
 &lt;code&gt;tar –zxvf jdk-7u9-linux-i586.tar.gz&lt;/code&gt;
 解压完毕！
- &lt;img alt="Alt text" src="./1445435973601.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435973601.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;vi ~/.bachrc&lt;/code&gt;
 在文件中加入这三行&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;export JAVA_HOME=/usr/java/jdk1.7.0_09&lt;/span&gt;
@@ -670,79 +670,79 @@ vim monkey.java
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Alt text" src="./1445435982617.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="/images/1445435982617.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;java –version&lt;/code&gt;
-&lt;img alt="Alt text" src="./1445435985676.png" /&gt;&lt;/p&gt;
+&lt;img alt="Alt text" src="/images/1445435985676.png" /&gt;&lt;/p&gt;
 &lt;p&gt;安装成功！&lt;/p&gt;
 &lt;h2&gt;Tomcat&lt;/h2&gt;
 &lt;p&gt;把tomcat的压缩包放在/usr/local下，解压。
 &lt;code&gt;tar -zxvf apache-tomcat-8.0.23.tar.gz&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435992061.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435992061.png" /&gt;&lt;/p&gt;
 &lt;p&gt;键入命令:
 &lt;code&gt;/usr/local/apache-tomcat-8.0.23/bin/startup.sh&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435997060.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435997060.png" /&gt;&lt;/p&gt;
 &lt;h2&gt;MySQL&lt;/h2&gt;
 &lt;p&gt;把MySQL的安装包放在/usr下
- &lt;img alt="Alt text" src="./1445436000708.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445436000708.png" /&gt;&lt;/p&gt;
 &lt;p&gt;进入MySQL，安装服务器
 &lt;code&gt;rpm -ivh MySQL-server-5.5.19-1.linux2.6.x86.rpm&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445436004666.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445436004666.png" /&gt;&lt;/p&gt;
 &lt;p&gt;安装客户端
 &lt;code&gt;rpm -ivh MySQL-client-5.5.19-1.linux2.6.x86.rpm&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445436009611.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445436009611.png" /&gt;&lt;/p&gt;
 &lt;p&gt;查看服务是否开启 &lt;code&gt;netstat  –nat&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445436012153.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445436012153.png" /&gt;&lt;/p&gt;
 &lt;p&gt;3306证明服务已开启。
 进入mysql
- &lt;img alt="Alt text" src="./1445436015505.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445436015505.png" /&gt;&lt;/p&gt;
 &lt;p&gt;退出 Ctrl+C
- &lt;img alt="Alt text" src="./1445436019274.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445436019274.png" /&gt;&lt;/p&gt;
 &lt;h2&gt;Eclipse&lt;/h2&gt;
 &lt;p&gt;在/usr下新建eclipse文件夹并把压缩包放进来。
 进入文件夹
- &lt;img alt="Alt text" src="./1445436023562.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445436023562.png" /&gt;&lt;/p&gt;
 &lt;p&gt;开始解压
 &lt;code&gt;tar -zxvf eclipse-jee-luna-SR2-linux-gtk.tar.gz&lt;/code&gt;
 解压完成后进入eclipse打开
 ./eclipse
- &lt;img alt="Alt text" src="./1445436027592.png" /&gt;&lt;/p&gt;</summary><category term="Linux"></category><category term="环境配置"></category></entry><entry><title>RPM 五种基本的操作方式、磁盘分区、挂载、压缩与解压</title><link href="http://cestlavi3.github.io/RPM%20%E4%BA%94%E7%A7%8D%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%93%8D%E4%BD%9C%E6%96%B9%E5%BC%8F%E3%80%81%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA%E3%80%81%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B.html" rel="alternate"></link><updated>2015-07-24T18:32:00+08:00</updated><author><name>CestLaVi3</name></author><id>tag:cestlavi3.github.io,2015-07-24:RPM 五种基本的操作方式、磁盘分区、压缩与解压.html</id><summary type="html">&lt;h2&gt;挂载&lt;/h2&gt;
+ &lt;img alt="Alt text" src="/images/1445436027592.png" /&gt;&lt;/p&gt;</summary><category term="Linux"></category><category term="环境配置"></category></entry><entry><title>RPM 五种基本的操作方式、磁盘分区、挂载、压缩与解压</title><link href="http://cestlavi3.github.io/RPM%20%E4%BA%94%E7%A7%8D%E5%9F%BA%E6%9C%AC%E7%9A%84%E6%93%8D%E4%BD%9C%E6%96%B9%E5%BC%8F%E3%80%81%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA%E3%80%81%E5%8E%8B%E7%BC%A9%E4%B8%8E%E8%A7%A3%E5%8E%8B.html" rel="alternate"></link><updated>2015-07-24T18:32:00+08:00</updated><author><name>CestLaVi3</name></author><id>tag:cestlavi3.github.io,2015-07-24:RPM 五种基本的操作方式、磁盘分区、压缩与解压.html</id><summary type="html">&lt;h2&gt;挂载&lt;/h2&gt;
 &lt;h3&gt;光驱挂载&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;ll /dev/cd*&lt;/code&gt;（dev存放硬件设备）查看光驱，列出dev目录下所有以cd开头的文件
- &lt;img alt="Alt text" src="./1445435053111.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435053111.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;cd /mnt&lt;/code&gt; 进入linux下规定的挂载点
- &lt;img alt="Alt text" src="./1445435058266.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435058266.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;mkdir cdrom&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435063010.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435063010.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;cd cdrom&lt;/code&gt;
 &lt;code&gt;mount /dev/scd0 /mnt/cdrom&lt;/code&gt;  挂载 把&lt;code&gt;scd0&lt;/code&gt;挂载到cdrom
- &lt;img alt="Alt text" src="./1445435069393.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435069393.png" /&gt;&lt;/p&gt;
 &lt;p&gt;挂载成功显示提示，并且桌面弹出图标。
- &lt;img alt="Alt text" src="./1445435071456.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435071456.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;光驱卸载&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;cd ..&lt;/code&gt;返回&lt;code&gt;/mnt&lt;/code&gt;目录
 卸载是容易报驱动器忙的错误的，是因为当前在cdrom下，所以卸载之前要先退出cdrom。
 &lt;code&gt;umount /dev/hdc /mnt/cdrom&lt;/code&gt;卸载
- &lt;img alt="Alt text" src="./1445435076921.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435076921.png" /&gt;&lt;/p&gt;
 &lt;p&gt;同时桌面上光驱图标消失。
 注意：卸载光驱后删除cdrom是个好习惯，所以建议每次卸载后及时删除cdrom。
- &lt;img alt="Alt text" src="./1445435080877.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435080877.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;U盘挂载&lt;/h3&gt;
 &lt;p&gt;挂载U盘与挂载光盘不同，输入命令dev /dev/usb*就会发现，机器有几个USB口就会显示几个，所以不能这样查。
 连接U盘，在虚拟机可移动设备选项中选择U盘连接。
 打开终端，键入fdisk -l  显示U盘信息
-&lt;img alt="Alt text" src="./1445435086611.png" /&gt;
-&lt;img alt="Alt text" src="./1445435088523.png" /&gt;&lt;/p&gt;
+&lt;img alt="Alt text" src="/images/1445435086611.png" /&gt;
+&lt;img alt="Alt text" src="/images/1445435088523.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;cd /mnt&lt;/code&gt; 进入&lt;code&gt;/mnt&lt;/code&gt;目录
 &lt;code&gt;mkdir usb&lt;/code&gt; 创建usb路径
 &lt;code&gt;mount /dev/sdb4 /mnt/usb&lt;/code&gt;挂载 第一个路径是上一步查到的 第二个路径是刚才创建的
 &lt;code&gt;cd usb&lt;/code&gt; 进入U盘
- &lt;img alt="Alt text" src="./1445435094867.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435094867.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;U盘卸载&lt;/h3&gt;
 &lt;p&gt;和卸载光盘一样，先退出，再卸载，最后删除usb。
 &lt;code&gt;cd ..&lt;/code&gt;
 &lt;code&gt;umount /dev/sdb4 /mnt/usb&lt;/code&gt;
 &lt;code&gt;rmdir usb&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435102236.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435102236.png" /&gt;&lt;/p&gt;
 &lt;h2&gt;RPM 五种基本的操作方式(不包括创建软件包)&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;安装, 卸载, 升级, 查询,和验证。&lt;/p&gt;
@@ -753,7 +753,7 @@ vim monkey.java
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Alt text" src="./1445435108200.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="/images/1445435108200.png" /&gt;&lt;/p&gt;
 &lt;p&gt;RPM安装完毕后会打印出软件包的名字(并不一定与文件名相同)，而后打印一连串的#号以表示安装进度。虽然软件包的安装被设计的尽量简单易行，但还是可能会发生如下的错误：
 1.  软件包已被安装
 如果您的软件包已被安装, 将会出现以下信息：&lt;/p&gt;
@@ -789,7 +789,7 @@ zisofs-tools-1.0.6-3.2.2
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;img alt="Alt text" src="./1445435124945.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="/images/1445435124945.png" /&gt;&lt;/p&gt;
 &lt;p&gt;除了指定软件包名以外，您还可以使用以下选项来指明要查询哪些软件包的信息。这些选项被称之为 “软件包指定选项“。
 &lt;em&gt; -a 查询所有已安装的软件包
 &lt;/em&gt; -f 将查询包含有文件. 的软件包
@@ -830,7 +830,7 @@ error: foo-1.0-1.i386.rpm cannot be installed
 
 
 &lt;p&gt;注意这里使用软件包的名字&lt;code&gt;zisofs-tools&lt;/code&gt;，而不是软件包文件的名字&lt;code&gt;zisofs-tools-1.0.6-3.2.2.i386.rpm&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435135370.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435135370.png" /&gt;&lt;/p&gt;
 &lt;p&gt;如果其它软件包依赖于您要卸载的软件包，卸载时则会产生错误信息。如：&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;removing these packages would &lt;span class="nb"&gt;break &lt;/span&gt;dependencies:foo is needed by bar-1.0-1
 &lt;/pre&gt;&lt;/div&gt;
@@ -913,76 +913,76 @@ rpm -qlp koules-1.2-2.i386.rpm输出结果为：&lt;/li&gt;
 &lt;h3&gt;分区前&lt;/h3&gt;
 &lt;p&gt;磁盘分区命令&lt;code&gt;fdisk –l&lt;/code&gt;
 进入磁盘分区下可键入p查看当前分区状况，键入m查看指令帮助，键入d删除相应分区，键入n新建分区，在新建分区下键入p新建主分区，键入e新建扩展分区
- &lt;img alt="Alt text" src="./1445435150941.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435150941.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;fdisk /dev/sda&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435154309.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435154309.png" /&gt;&lt;/p&gt;
 &lt;p&gt;先删除磁盘现有分区&lt;/p&gt;
 &lt;p&gt;依次删除
- &lt;img alt="Alt text" src="./1445435161027.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435161027.png" /&gt;&lt;/p&gt;
 &lt;p&gt;全部删除后
- &lt;img alt="Alt text" src="./1445435163940.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435163940.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;开始分区&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;主分区
- &lt;img alt="Alt text" src="./1445435168033.png" /&gt;&lt;/li&gt;
+ &lt;img alt="Alt text" src="/images/1445435168033.png" /&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;先分主分区。n新建分区，选择p新建主分区，从第1簇开始，注意，+5000M是分配的内存大小，也可以直接选择分配多少簇。
- &lt;img alt="Alt text" src="./1445435172233.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435172233.png" /&gt;&lt;/p&gt;
 &lt;p&gt;第二块主分区分配完毕。
 2. 扩展分区
- &lt;img alt="Alt text" src="./1445435176761.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435176761.png" /&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;逻辑分区
- &lt;img alt="Alt text" src="./1445435179355.png" /&gt;
+ &lt;img alt="Alt text" src="/images/1445435179355.png" /&gt;
 注意：逻辑分区从第5块开始。
- &lt;img alt="Alt text" src="./1445435184927.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435184927.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;修改分区ID，使分区在window下能看到
- &lt;img alt="Alt text" src="./1445435188365.png" /&gt;
+ &lt;img alt="Alt text" src="/images/1445435188365.png" /&gt;
 键入t改变分区的系统标识，选择要改变的分区ID
-&lt;img alt="Alt text" src="./1445435192349.png" /&gt;&lt;/p&gt;
+&lt;img alt="Alt text" src="/images/1445435192349.png" /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;压缩与解压缩&lt;/h2&gt;
 &lt;h3&gt;压缩文件&lt;/h3&gt;
 &lt;p&gt;第一种
 &lt;code&gt;gzip -9 -c 原文件名&amp;gt;压缩后的文件名.gz&lt;/code&gt;（写全后缀名） （9最大压缩率 c参数输出）
- &lt;img alt="Alt text" src="./1445435199053.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435199053.png" /&gt;&lt;/p&gt;
 &lt;p&gt;第二种
 &lt;code&gt;bzip2 -9 -c 原文件名&amp;gt;压缩包名.bz2&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435202871.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435202871.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;解压文件&lt;/h3&gt;
 &lt;p&gt;第一种
 &lt;code&gt;gunzip -c 文件名&amp;gt;解压后的文件名&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435207057.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435207057.png" /&gt;&lt;/p&gt;
 &lt;p&gt;第二种
 &lt;code&gt;bzip2 -kd 压缩包名&lt;/code&gt; （k保留原文件）
- &lt;img alt="Alt text" src="./1445435210263.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435210263.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;压缩文件夹&lt;/h3&gt;
 &lt;p&gt;文件夹需要打包才能进行压缩 打包命令tar只可以打包不能压缩 使用下面命令可以打包压缩
 第一种
 &lt;code&gt;tar -zcvf压缩后的文件名.tar.zg 文件名&lt;/code&gt;（z压缩c可视化vf文件系统）
- &lt;img alt="Alt text" src="./1445435224967.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435224967.png" /&gt;&lt;/p&gt;
 &lt;p&gt;第二种
 &lt;code&gt;tar -jcvf 压缩后的文件名.tar.bz2 原文件名&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435231290.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435231290.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;解压文件夹&lt;/h3&gt;
 &lt;p&gt;第一种
 &lt;code&gt;tar -zxvf 压缩包的名字&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435237037.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435237037.png" /&gt;&lt;/p&gt;
 &lt;p&gt;第二种
 &lt;code&gt;tar -jxvf 压缩包的名字&lt;/code&gt;
- &lt;img alt="Alt text" src="./1445435240934.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435240934.png" /&gt;&lt;/p&gt;
 &lt;h3&gt;别名&lt;/h3&gt;
 &lt;p&gt;复杂的指令那么多，难免会记不住，有一种方法能够把复杂的命令变简单。
 &lt;code&gt;vim ~/.bashrc&lt;/code&gt;（配置文件 修改后重启才能生效）
- &lt;img alt="Alt text" src="./1445435247267.png" /&gt;
-&lt;img alt="Alt text" src="./1445435250388.png" /&gt;
-&lt;img alt="Alt text" src="./1445435253402.png" /&gt;&lt;/p&gt;
+ &lt;img alt="Alt text" src="/images/1445435247267.png" /&gt;
+&lt;img alt="Alt text" src="/images/1445435250388.png" /&gt;
+&lt;img alt="Alt text" src="/images/1445435253402.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;source .bashrc&lt;/code&gt;让配置文件不重启就能生效 但不等于重启命令！
-  &lt;img alt="Alt text" src="./1445435257680.png" /&gt;&lt;/p&gt;</summary><category term="Linux"></category><category term="RPM"></category></entry><entry><title>Red hat安装与使用</title><link href="http://cestlavi3.github.io/Red%20hat%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.html" rel="alternate"></link><updated>2015-07-22T22:55:00+08:00</updated><author><name>CestLaVi3</name></author><id>tag:cestlavi3.github.io,2015-07-22:Red hat安装与使用.html</id><summary type="html">&lt;h2&gt;新建虚拟机&lt;/h2&gt;
+  &lt;img alt="Alt text" src="/images/1445435257680.png" /&gt;&lt;/p&gt;</summary><category term="Linux"></category><category term="RPM"></category></entry><entry><title>Red hat安装与使用</title><link href="http://cestlavi3.github.io/Red%20hat%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.html" rel="alternate"></link><updated>2015-07-22T22:55:00+08:00</updated><author><name>CestLaVi3</name></author><id>tag:cestlavi3.github.io,2015-07-22:Red hat安装与使用.html</id><summary type="html">&lt;h2&gt;新建虚拟机&lt;/h2&gt;
 &lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722221542124.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722221631619.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img alt="这里写图片描述" src="/images/20150722221657861.png" /&gt;&lt;/p&gt;

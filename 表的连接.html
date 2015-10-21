@@ -78,9 +78,9 @@
 <p>个人认为，这些分类中主要搞定<strong>内连接</strong>、<strong>外连接</strong>、<strong>左连接</strong>就足够了。</p>
 <h2>内连接</h2>
 <p>sys_book表如下：
-<img alt="Alt text" src="./1441690099514.png" /></p>
+<img alt="Alt text" src="/images/1441690099514.png" /></p>
 <p>sys_book_type表如下：
-<img alt="Alt text" src="./1441690034401.png" /></p>
+<img alt="Alt text" src="/images/1441690034401.png" /></p>
 <p>假设现在的需求是查询两张表全部的内容
 内连接必须保证某一个字段相等，对于这两张表来说，它们是靠type_id联系在一起的。
 <strong>sql语句如下：</strong></p>
@@ -90,7 +90,7 @@
 
 
 <p><strong>查询的结果：</strong>
-<img alt="Alt text" src="./1441693035046.png" /></p>
+<img alt="Alt text" src="/images/1441693035046.png" /></p>
 <p>它的底层靠笛卡尔积，从sys_book_type表的第一条数据开始，因为要做内连接，所以将数据取出后上sys_book做查找，反复进行对比，将数据取出。</p>
   </div>
   <div class="tag-cloud">
