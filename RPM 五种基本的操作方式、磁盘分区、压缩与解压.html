@@ -65,42 +65,42 @@
   <div>
     <h2>挂载</h2>
 <h3>光驱挂载</h3>
-<p><code>ll /dev/cd*</code>（dev存放硬件设备）查看光驱，列出dev目录下所有以cd开头的文件
- <img alt="Alt text" src="/images/1445435053111.png" /></p>
-<p><code>cd /mnt</code> 进入linux下规定的挂载点
- <img alt="Alt text" src="/images/1445435058266.png" /></p>
-<p><code>mkdir cdrom</code>
- <img alt="Alt text" src="/images/1445435063010.png" /></p>
+<p><code>ll /dev/cd*</code>（dev存放硬件设备）查看光驱，列出dev目录下所有以cd开头的文件</p>
+<p><img alt="Alt text" src="/images/1445435053111.png" /></p>
+<p><code>cd /mnt</code> 进入linux下规定的挂载点</p>
+<p><img alt="Alt text" src="/images/1445435058266.png" /></p>
+<p><code>mkdir cdrom</code></p>
+<p><img alt="Alt text" src="/images/1445435063010.png" /></p>
 <p><code>cd cdrom</code>
-<code>mount /dev/scd0 /mnt/cdrom</code>  挂载 把<code>scd0</code>挂载到cdrom
- <img alt="Alt text" src="/images/1445435069393.png" /></p>
-<p>挂载成功显示提示，并且桌面弹出图标。
- <img alt="Alt text" src="/images/1445435071456.png" /></p>
+<code>mount /dev/scd0 /mnt/cdrom</code>  挂载 把<code>scd0</code>挂载到cdrom</p>
+<p><img alt="Alt text" src="/images/1445435069393.png" /></p>
+<p>挂载成功显示提示，并且桌面弹出图标。</p>
+<p><img alt="Alt text" src="/images/1445435071456.png" /></p>
 <h3>光驱卸载</h3>
 <p><code>cd ..</code>返回<code>/mnt</code>目录
 卸载是容易报驱动器忙的错误的，是因为当前在cdrom下，所以卸载之前要先退出cdrom。
-<code>umount /dev/hdc /mnt/cdrom</code>卸载
- <img alt="Alt text" src="/images/1445435076921.png" /></p>
+<code>umount /dev/hdc /mnt/cdrom</code>卸载</p>
+<p><img alt="Alt text" src="/images/1445435076921.png" /></p>
 <p>同时桌面上光驱图标消失。
-注意：卸载光驱后删除cdrom是个好习惯，所以建议每次卸载后及时删除cdrom。
- <img alt="Alt text" src="/images/1445435080877.png" /></p>
+注意：卸载光驱后删除cdrom是个好习惯，所以建议每次卸载后及时删除cdrom。</p>
+<p><img alt="Alt text" src="/images/1445435080877.png" /></p>
 <h3>U盘挂载</h3>
 <p>挂载U盘与挂载光盘不同，输入命令dev /dev/usb*就会发现，机器有几个USB口就会显示几个，所以不能这样查。
 连接U盘，在虚拟机可移动设备选项中选择U盘连接。
-打开终端，键入fdisk -l  显示U盘信息
-<img alt="Alt text" src="/images/1445435086611.png" />
+打开终端，键入fdisk -l  显示U盘信息</p>
+<p><img alt="Alt text" src="/images/1445435086611.png" />
 <img alt="Alt text" src="/images/1445435088523.png" /></p>
 <p><code>cd /mnt</code> 进入<code>/mnt</code>目录
 <code>mkdir usb</code> 创建usb路径
 <code>mount /dev/sdb4 /mnt/usb</code>挂载 第一个路径是上一步查到的 第二个路径是刚才创建的
-<code>cd usb</code> 进入U盘
- <img alt="Alt text" src="/images/1445435094867.png" /></p>
+<code>cd usb</code> 进入U盘</p>
+<p><img alt="Alt text" src="/images/1445435094867.png" /></p>
 <h3>U盘卸载</h3>
 <p>和卸载光盘一样，先退出，再卸载，最后删除usb。
 <code>cd ..</code>
 <code>umount /dev/sdb4 /mnt/usb</code>
-<code>rmdir usb</code>
- <img alt="Alt text" src="/images/1445435102236.png" /></p>
+<code>rmdir usb</code></p>
+<p><img alt="Alt text" src="/images/1445435102236.png" /></p>
 <h2>RPM 五种基本的操作方式(不包括创建软件包)</h2>
 <blockquote>
 <p>安装, 卸载, 升级, 查询,和验证。</p>
@@ -187,8 +187,8 @@ error: foo-1.0-1.i386.rpm cannot be installed
 </pre></div>
 
 
-<p>注意这里使用软件包的名字<code>zisofs-tools</code>，而不是软件包文件的名字<code>zisofs-tools-1.0.6-3.2.2.i386.rpm</code>
- <img alt="Alt text" src="/images/1445435135370.png" /></p>
+<p>注意这里使用软件包的名字<code>zisofs-tools</code>，而不是软件包文件的名字<code>zisofs-tools-1.0.6-3.2.2.i386.rpm</code></p>
+<p><img alt="Alt text" src="/images/1445435135370.png" /></p>
 <p>如果其它软件包依赖于您要卸载的软件包，卸载时则会产生错误信息。如：</p>
 <div class="highlight"><pre>removing these packages would <span class="nb">break </span>dependencies:foo is needed by bar-1.0-1
 </pre></div>
@@ -270,77 +270,75 @@ rpm -qlp koules-1.2-2.i386.rpm输出结果为：</li>
 <h2>磁盘分区</h2>
 <h3>分区前</h3>
 <p>磁盘分区命令<code>fdisk –l</code>
-进入磁盘分区下可键入p查看当前分区状况，键入m查看指令帮助，键入d删除相应分区，键入n新建分区，在新建分区下键入p新建主分区，键入e新建扩展分区
- <img alt="Alt text" src="/images/1445435150941.png" /></p>
-<p><code>fdisk /dev/sda</code>
- <img alt="Alt text" src="/images/1445435154309.png" /></p>
+进入磁盘分区下可键入p查看当前分区状况，键入m查看指令帮助，键入d删除相应分区，键入n新建分区，在新建分区下键入p新建主分区，键入e新建扩展分区</p>
+<p><img alt="Alt text" src="/images/1445435150941.png" /></p>
+<p><code>fdisk /dev/sda</code></p>
+<p><img alt="Alt text" src="/images/1445435154309.png" /></p>
 <p>先删除磁盘现有分区</p>
-<p>依次删除
- <img alt="Alt text" src="/images/1445435161027.png" /></p>
-<p>全部删除后
- <img alt="Alt text" src="/images/1445435163940.png" /></p>
+<p>依次删除</p>
+<p><img alt="Alt text" src="/images/1445435161027.png" /></p>
+<p>全部删除后</p>
+<p><img alt="Alt text" src="/images/1445435163940.png" /></p>
 <h3>开始分区</h3>
 <ol>
-<li>主分区
- <img alt="Alt text" src="/images/1445435168033.png" /></li>
+<li>主分区</li>
 </ol>
-<p>先分主分区。n新建分区，选择p新建主分区，从第1簇开始，注意，+5000M是分配的内存大小，也可以直接选择分配多少簇。
- <img alt="Alt text" src="/images/1445435172233.png" /></p>
+<p><img alt="Alt text" src="/images/1445435168033.png" /></p>
+<p>先分主分区。n新建分区，选择p新建主分区，从第1簇开始，注意，+5000M是分配的内存大小，也可以直接选择分配多少簇。</p>
+<p><img alt="Alt text" src="/images/1445435172233.png" /></p>
 <p>第二块主分区分配完毕。
-2. 扩展分区
- <img alt="Alt text" src="/images/1445435176761.png" /></p>
+2. 扩展分区</p>
+<p><img alt="Alt text" src="/images/1445435176761.png" /></p>
 <ol>
-<li>
-<p>逻辑分区
- <img alt="Alt text" src="/images/1445435179355.png" />
-注意：逻辑分区从第5块开始。
- <img alt="Alt text" src="/images/1445435184927.png" /></p>
-</li>
-<li>
-<p>修改分区ID，使分区在window下能看到
- <img alt="Alt text" src="/images/1445435188365.png" />
-键入t改变分区的系统标识，选择要改变的分区ID
-<img alt="Alt text" src="/images/1445435192349.png" /></p>
-</li>
+<li>逻辑分区</li>
 </ol>
+<p><img alt="Alt text" src="/images/1445435179355.png" /></p>
+<p>注意：逻辑分区从第5块开始。</p>
+<p><img alt="Alt text" src="/images/1445435184927.png" /></p>
+<ol>
+<li>修改分区ID，使分区在window下能看到</li>
+</ol>
+<p><img alt="Alt text" src="/images/1445435188365.png" /></p>
+<p>键入t改变分区的系统标识，选择要改变的分区ID</p>
+<p><img alt="Alt text" src="/images/1445435192349.png" /></p>
 <h2>压缩与解压缩</h2>
 <h3>压缩文件</h3>
 <p>第一种
-<code>gzip -9 -c 原文件名&gt;压缩后的文件名.gz</code>（写全后缀名） （9最大压缩率 c参数输出）
- <img alt="Alt text" src="/images/1445435199053.png" /></p>
+<code>gzip -9 -c 原文件名&gt;压缩后的文件名.gz</code>（写全后缀名） （9最大压缩率 c参数输出）</p>
+<p><img alt="Alt text" src="/images/1445435199053.png" /></p>
 <p>第二种
-<code>bzip2 -9 -c 原文件名&gt;压缩包名.bz2</code>
- <img alt="Alt text" src="/images/1445435202871.png" /></p>
+<code>bzip2 -9 -c 原文件名&gt;压缩包名.bz2</code></p>
+<p><img alt="Alt text" src="/images/1445435202871.png" /></p>
 <h3>解压文件</h3>
 <p>第一种
-<code>gunzip -c 文件名&gt;解压后的文件名</code>
- <img alt="Alt text" src="/images/1445435207057.png" /></p>
+<code>gunzip -c 文件名&gt;解压后的文件名</code></p>
+<p><img alt="Alt text" src="/images/1445435207057.png" /></p>
 <p>第二种
-<code>bzip2 -kd 压缩包名</code> （k保留原文件）
- <img alt="Alt text" src="/images/1445435210263.png" /></p>
+<code>bzip2 -kd 压缩包名</code> （k保留原文件）</p>
+<p><img alt="Alt text" src="/images/1445435210263.png" /></p>
 <h3>压缩文件夹</h3>
 <p>文件夹需要打包才能进行压缩 打包命令tar只可以打包不能压缩 使用下面命令可以打包压缩
 第一种
-<code>tar -zcvf压缩后的文件名.tar.zg 文件名</code>（z压缩c可视化vf文件系统）
- <img alt="Alt text" src="/images/1445435224967.png" /></p>
+<code>tar -zcvf压缩后的文件名.tar.zg 文件名</code>（z压缩c可视化vf文件系统）</p>
+<p><img alt="Alt text" src="/images/1445435224967.png" /></p>
 <p>第二种
-<code>tar -jcvf 压缩后的文件名.tar.bz2 原文件名</code>
- <img alt="Alt text" src="/images/1445435231290.png" /></p>
+<code>tar -jcvf 压缩后的文件名.tar.bz2 原文件名</code></p>
+<p><img alt="Alt text" src="/images/1445435231290.png" /></p>
 <h3>解压文件夹</h3>
-<p>第一种
-<code>tar -zxvf 压缩包的名字</code>
+<p>第一种</p>
+<p><code>tar -zxvf 压缩包的名字</code>
  <img alt="Alt text" src="/images/1445435237037.png" /></p>
 <p>第二种
-<code>tar -jxvf 压缩包的名字</code>
- <img alt="Alt text" src="/images/1445435240934.png" /></p>
+<code>tar -jxvf 压缩包的名字</code></p>
+<p><img alt="Alt text" src="/images/1445435240934.png" /></p>
 <h3>别名</h3>
 <p>复杂的指令那么多，难免会记不住，有一种方法能够把复杂的命令变简单。
-<code>vim ~/.bashrc</code>（配置文件 修改后重启才能生效）
- <img alt="Alt text" src="/images/1445435247267.png" />
+<code>vim ~/.bashrc</code>（配置文件 修改后重启才能生效）</p>
+<p><img alt="Alt text" src="/images/1445435247267.png" />
 <img alt="Alt text" src="/images/1445435250388.png" />
 <img alt="Alt text" src="/images/1445435253402.png" /></p>
-<p><code>source .bashrc</code>让配置文件不重启就能生效 但不等于重启命令！
-  <img alt="Alt text" src="/images/1445435257680.png" /></p>
+<p><code>source .bashrc</code>让配置文件不重启就能生效 但不等于重启命令！</p>
+<p><img alt="Alt text" src="/images/1445435257680.png" /></p>
   </div>
   <div class="tag-cloud">
     <p>
