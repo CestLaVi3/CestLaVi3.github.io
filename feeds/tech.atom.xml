@@ -1,5 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>WJ's Blog</title><link href="http://cestlavi3.github.io/" rel="alternate"></link><link href="http://cestlavi3.github.io/feeds/tech.atom.xml" rel="self"></link><id>http://cestlavi3.github.io/</id><updated>2015-10-28T22:08:00+08:00</updated><entry><title>原生JS操作DOM对象</title><link href="http://cestlavi3.github.io/%E5%8E%9F%E7%94%9FJS%E6%93%8D%E4%BD%9CDOM%E5%AF%B9%E8%B1%A1.html" rel="alternate"></link><updated>2015-10-28T22:08:00+08:00</updated><author><name>CestLaVi3</name></author><id>tag:cestlavi3.github.io,2015-10-28:原生JS操作DOM对象.html</id><summary type="html">&lt;h2&gt;查看节点&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>WJ's Blog</title><link href="http://cestlavi3.github.io/" rel="alternate"></link><link href="http://cestlavi3.github.io/feeds/tech.atom.xml" rel="self"></link><id>http://cestlavi3.github.io/</id><updated>2015-12-02T17:41:00+08:00</updated><entry><title>frame与iframe的区别</title><link href="http://cestlavi3.github.io/frame%E4%B8%8Eiframe%E7%9A%84%E5%8C%BA%E5%88%AB.html" rel="alternate"></link><updated>2015-12-02T17:41:00+08:00</updated><author><name>CestLaVi3</name></author><id>tag:cestlavi3.github.io,2015-12-02:frame与iframe的区别.html</id><summary type="html">&lt;p&gt;在java中，frame是一种控件，可作为父窗体加载其他swing控件。那在html中&lt;code&gt;iframe&lt;/code&gt;元素会创建包含另外一个文档的内联框架（即行内框架）。&lt;code&gt;&amp;lt;frame&amp;gt;&lt;/code&gt;标签定义 frameset 中的一个特定的窗口（框架）。&lt;/p&gt;
+&lt;p&gt;Iframe标记又叫浮动帧标记，可以用它将一个HTML文档嵌入在一个HTML中显示。它和Frame标记的最大区别是在网页中嵌入的&lt;code&gt;&amp;lt;Iframe&amp;gt;&amp;lt;/Iframe&amp;gt;&lt;/code&gt;所包含的内容与整个页面是一个整体，而&lt;code&gt;&amp;lt;Frame&amp;gt;&amp;lt;/Frame&amp;gt;&lt;/code&gt;所包含的内容是一个独立的个体，是可以独立显示的。另外，应用Iframe还可以在同一个页面中多次显示同一内容，而不必重复这段内容的代码。&lt;/p&gt;
+&lt;p&gt;两者主要区别如下：
+- &lt;strong&gt;frame不能脱离frameSet单独使用，iframe可以；&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;frame必须在frameset里，而frameset不能与body元素共存，也就说有frameset元素的文档只能是一个框架集，不能有别的东东；&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;iframme是活动帧,就像是浮动面板 ，而frame是非活动帧，iframe放在网页的什么地方都行，但是frame只能放到上下左右四个方向； &lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;frame不能放在body中&lt;/strong&gt; 
+  如下：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;&amp;lt;!--&amp;lt;body&amp;gt;--&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;frameset&lt;/span&gt; &lt;span class="na"&gt;rows=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;50%,*&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; 
+   &lt;span class="nt"&gt;&amp;lt;frame&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame1&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test1.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;  
+   &lt;span class="nt"&gt;&amp;lt;frame&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame2&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test2.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;  
+&lt;span class="nt"&gt;&amp;lt;/frameset&amp;gt;&lt;/span&gt; 
+&lt;span class="c"&gt;&amp;lt;!--&amp;lt;body&amp;gt;--&amp;gt;&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;嵌套在frameSet中的iframe必需放在body中,不嵌套在frameSet中的iframe可以随意使用&lt;/strong&gt;
+如下：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;  &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;frameset&amp;gt;&lt;/span&gt;  
+      &lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame1&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test1.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;  
+      &lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame2&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test2.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;  
+    &lt;span class="nt"&gt;&amp;lt;/frameset&amp;gt;&lt;/span&gt;  
+  &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;div class="highlight"&gt;&lt;pre&gt;  //以下均可正常显示
+  &lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt; 
+   &lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame1&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test1.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;  
+   &lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame2&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test2.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;  
+  &lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt; 
+
+  &lt;span class="c"&gt;&amp;lt;!--&amp;lt;body&amp;gt;--&amp;gt;&lt;/span&gt; 
+   &lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame1&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test1.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;  
+   &lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame2&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test2.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;  
+   &lt;span class="c"&gt;&amp;lt;!--&amp;lt;/body&amp;gt;--&amp;gt;&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;frame的高度只能通过frameSet控制，iframe可以自己控制，不能通过frameset控制&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;&amp;lt;!--&amp;lt;body&amp;gt;--&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;frameset&lt;/span&gt; &lt;span class="na"&gt;rows=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;50%,*&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt; 
+   &lt;span class="nt"&gt;&amp;lt;frame&lt;/span&gt;   &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame1&amp;quot;&lt;/span&gt;   &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test1.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;  
+   &lt;span class="nt"&gt;&amp;lt;frame&lt;/span&gt;   &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame2&amp;quot;&lt;/span&gt;   &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test2.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;  
+&lt;span class="nt"&gt;&amp;lt;/frameset&amp;gt;&lt;/span&gt; 
+&lt;span class="c"&gt;&amp;lt;!--&amp;lt;/body&amp;gt;--&amp;gt;&lt;/span&gt; 
+
+&lt;span class="nt"&gt;&amp;lt;body&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;frameset&amp;gt;&lt;/span&gt; 
+   &lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;30%&amp;quot;&lt;/span&gt;  &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame1&amp;quot;&lt;/span&gt;   &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test1.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;  
+   &lt;span class="nt"&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;height=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;100&amp;quot;&lt;/span&gt;  &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;frame2&amp;quot;&lt;/span&gt;   &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;test2.htm&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;  
+&lt;span class="nt"&gt;&amp;lt;/frameset&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/body&amp;gt;&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;如果在同一个页面使用了两个以上的iframe，在IE中可以正常显示，在firefox中只能显示出第一个；使用两个以上的frame在IE和firefox中均可正常&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;iframe 可以放到表格里面。frame 则不行。 &lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;table&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;tr&amp;gt;&lt;/span&gt; 
+        &lt;span class="nt"&gt;&amp;lt;td&amp;gt;&amp;lt;iframe&lt;/span&gt; &lt;span class="na"&gt;id=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;src=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;/td&amp;gt;&amp;lt;td&amp;gt;&amp;lt;/td&amp;gt;&lt;/span&gt; 
+    &lt;span class="nt"&gt;&amp;lt;/tr&amp;gt;&lt;/span&gt; 
+&lt;span class="nt"&gt;&amp;lt;/table&amp;gt;&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Frame与Iframe两者可以实现的功能基本相同，不过Iframe比Frame具有更多的灵活性。 
+frame是整个页面的框架，由多个并列的网页构成。而iframe是内嵌的网页元素，也可以说是内嵌的框架，是一个网页中的子框架，两网页间是父子关系。&lt;/p&gt;</summary><category term="Html"></category><category term="前端"></category></entry><entry><title>原生JS操作DOM对象</title><link href="http://cestlavi3.github.io/%E5%8E%9F%E7%94%9FJS%E6%93%8D%E4%BD%9CDOM%E5%AF%B9%E8%B1%A1.html" rel="alternate"></link><updated>2015-10-28T22:08:00+08:00</updated><author><name>CestLaVi3</name></author><id>tag:cestlavi3.github.io,2015-10-28:原生JS操作DOM对象.html</id><summary type="html">&lt;h2&gt;查看节点&lt;/h2&gt;
 &lt;h3&gt;访问指定节点的方法：&lt;/h3&gt;
 &lt;h4&gt;通过id&lt;/h4&gt;
 &lt;p&gt;&lt;code&gt;getElementById()&lt;/code&gt;&lt;/p&gt;
